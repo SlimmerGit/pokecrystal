@@ -20,7 +20,9 @@ BulbasaurEvosAttacks:
 	db 15, SLEEP_POWDER
 	db 20, RAZOR_LEAF
 	db 25, SWEET_SCENT
+	db 28, BODY SLAM
 	db 32, GROWTH
+	db 35, SWORDS DANCE
 	db 39, SYNTHESIS
 	db 46, SOLARBEAM
 	db 0 ; no more level-up moves
@@ -38,7 +40,9 @@ IvysaurEvosAttacks:
 	db 15, SLEEP_POWDER
 	db 22, RAZOR_LEAF
 	db 29, SWEET_SCENT
+	db 31, BODY SLAM
 	db 38, GROWTH
+	db 43, SWORDS DANCE
 	db 47, SYNTHESIS
 	db 56, SOLARBEAM
 	db 0 ; no more level-up moves
@@ -56,7 +60,9 @@ VenusaurEvosAttacks:
 	db 15, SLEEP_POWDER
 	db 22, RAZOR_LEAF
 	db 29, SWEET_SCENT
+	db 31, BODY SLAM
 	db 41, GROWTH
+	db 44, SWORDS DANCE
 	db 53, SYNTHESIS
 	db 65, SOLARBEAM
 	db 0 ; no more level-up moves
@@ -71,7 +77,9 @@ CharmanderEvosAttacks:
 	db 19, RAGE
 	db 25, SCARY_FACE
 	db 31, FLAMETHROWER
+	db 34, SWORDS DANCE
 	db 37, SLASH
+	db 41, BELLY DRUM
 	db 43, DRAGON_RAGE
 	db 49, FIRE_SPIN
 	db 0 ; no more level-up moves
@@ -87,7 +95,9 @@ CharmeleonEvosAttacks:
 	db 20, RAGE
 	db 27, SCARY_FACE
 	db 34, FLAMETHROWER
+	db 38, SWORDS DANCE
 	db 41, SLASH
+	db 45, BELLY DRUM
 	db 48, DRAGON_RAGE
 	db 55, FIRE_SPIN
 	db 0 ; no more level-up moves
@@ -104,7 +114,10 @@ CharizardEvosAttacks:
 	db 27, SCARY_FACE
 	db 34, FLAMETHROWER
 	db 36, WING_ATTACK
+	db 40, SWORDS DANCE
 	db 44, SLASH
+	db 48, BELLY DRUM
+	db 50, ROCK SLIDE
 	db 54, DRAGON_RAGE
 	db 64, FIRE_SPIN
 	db 0 ; no more level-up moves
