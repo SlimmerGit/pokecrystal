@@ -1976,7 +1976,7 @@ KabutoEvosAttacks:
 	db 1, HARDEN
 	db 10, ABSORB
 	db 19, RAPID_SPIN
-	db 28, SAND_ATTACK
+	db 28, SLASH
 	db 37, GIGA_DRAIN
 	db 46, HYDRO_PUMP
 	db 55, ANCIENTPOWER
@@ -1989,7 +1989,7 @@ KabutopsEvosAttacks:
 	db 1, ABSORB
 	db 10, ABSORB
 	db 19, RAPID_SPIN
-	db 28, SAND_ATTACK
+	db 28, SLASH
 	db 37, GIGA_DRAIN
 	db 40, SWORDS_DANCE
 	db 51, HYDRO_PUMP
