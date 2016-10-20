@@ -1125,9 +1125,9 @@ MistyGroup:
 
 	db 47, STARMIE
 		db SURF
-		db THUNDER_WAVE
+		db THUNDERBOLT
 		db RECOVER
-		db REFLECT
+		db ICE_BEAM
 
 	db $ff ; end
 
