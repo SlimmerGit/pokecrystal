@@ -736,33 +736,39 @@ WillGroup:
 
 	; party
 
-	db 40, XATU
-		db QUICK_ATTACK
-		db FUTURE_SIGHT
-		db CONFUSE_RAY
+	db 50, ESPEON
+		db GROWTH
+		db BITE
+		db BATON_PASS
 		db PSYCHIC_M
 
-	db 41, JYNX
-		db DOUBLESLAP
+	db 50, JYNX
+		db MEAN_LOOK
 		db LOVELY_KISS
-		db ICE_PUNCH
+		db ICE_BEAM
+		db NIGHTMARE
+
+	db 50, EXEGGUTOR
+		db SLEEP_POWDER
+		db GIGA_DRAIN
+		db EXPLOSION
 		db PSYCHIC_M
 
-	db 41, EXEGGUTOR
+	db 50, SLOWBRO
+		db REST
+		db THUNDER_WAVE
+		db SURF
+		db PSYCHIC_M
+		
+	db 50, STARMIE
+		db RECOVER
 		db REFLECT
-		db LEECH_SEED
-		db EGG_BOMB
+		db SURF
 		db PSYCHIC_M
 
-	db 41, SLOWBRO
-		db CURSE
-		db AMNESIA
-		db BODY_SLAM
-		db PSYCHIC_M
-
-	db 42, XATU
-		db QUICK_ATTACK
-		db FUTURE_SIGHT
+	db 50, XATU
+		db DRILL_PECK
+		db GIGA_DRAIN
 		db CONFUSE_RAY
 		db PSYCHIC_M
 
@@ -827,34 +833,40 @@ BrunoGroup:
 
 	; party
 
-	db 42, HITMONTOP
-		db PURSUIT
-		db QUICK_ATTACK
-		db DIG
-		db DETECT
+	db 50, HITMONTOP
+		db HI_JUMP_KICK
+		db CURSE
+		db STRENGHT
+		db REST
 
-	db 42, HITMONLEE
-		db SWAGGER
-		db DOUBLE_KICK
+	db 50, HITMONLEE
+		db MEDITATE
+		db BODY_SLAM
 		db HI_JUMP_KICK
 		db FORESIGHT
 
-	db 42, HITMONCHAN
-		db THUNDERPUNCH
-		db ICE_PUNCH
-		db FIRE_PUNCH
+	db 50, HITMONCHAN
+		db CURSE
+		db HI_JUMP_KICK
+		db BODY_SLAM
 		db MACH_PUNCH
 
-	db 43, ONIX
-		db BIND
+	db 50, STEELIX
+		db CURSE
 		db EARTHQUAKE
-		db SANDSTORM
+		db ROAR
 		db ROCK_SLIDE
 
-	db 46, MACHAMP
+	db 50, HERACROSS
+		db MEGAHORN
+		db EARTHQUAKE
+		db REST
+		db SLEEP_TALK	
+
+	db 50, MACHAMP
 		db ROCK_SLIDE
-		db FORESIGHT
-		db VITAL_THROW
+		db CURSE
+		db FIRE_BLAST
 		db CROSS_CHOP
 
 	db $ff ; end
@@ -873,34 +885,40 @@ KarenGroup:
 
 	; party
 
-	db 42, UMBREON
-		db SAND_ATTACK
-		db CONFUSE_RAY
-		db FAINT_ATTACK
+	db 50, UMBREON
+		db REST
+		db BATON_PASS
+		db CHARM
 		db MEAN_LOOK
 
-	db 42, VILEPLUME
-		db STUN_SPORE
-		db ACID
-		db MOONLIGHT
-		db PETAL_DANCE
+	db 50, MISDREAVUS
+		db PERISH_SONG
+		db PROTECT
+		db THUNDER
+		db MEAN_LOOK
 
-	db 45, GENGAR
-		db LICK
-		db SPITE
-		db CURSE
-		db DESTINY_BOND
+	db 50, GENGAR
+		db HYPNOSIS
+		db ICE_PUNCH
+		db THUNDERBOLT
+		db EXPLOSION
 
-	db 44, MURKROW
-		db QUICK_ATTACK
-		db WHIRLWIND
+	db 50, MURKROW
+		db NIGHT_SHADE
+		db DRILL_PECK
 		db PURSUIT
 		db FAINT_ATTACK
+		
+	db 50, TYRANITAR
+		db ROCK_SLIDE
+		db CRUNCH
+		db FIRE_BLAST
+		db DYNAMICPUNCH
 
-	db 47, HOUNDOOM
-		db ROAR
-		db PURSUIT
-		db FLAMETHROWER
+	db 50, HOUNDOOM
+		db REST
+		db SLEEP_TALK
+		db FIRE_BLAST
 		db CRUNCH
 
 	db $ff ; end
@@ -919,33 +937,39 @@ KogaGroup:
 
 	; party
 
-	db 40, ARIADOS
-		db DOUBLE_TEAM
+	db 50, ARIADOS
+		db SLUDGE_BOMB
 		db SPIDER_WEB
 		db BATON_PASS
 		db GIGA_DRAIN
 
-	db 41, VENOMOTH
-		db SUPERSONIC
-		db GUST
-		db PSYCHIC_M
-		db TOXIC
+	db 50, WEEZING
+		db SLUDGE_BOMB
+		db FIRE_BLAST
+		db THUNDER
+		db EXPLOSION
 
-	db 43, FORRETRESS
-		db PROTECT
-		db SWIFT
+	db 50, FORRETRESS
+		db COUNTER
+		db TOXIC
 		db EXPLOSION
 		db SPIKES
 
-	db 42, MUK
-		db MINIMIZE
-		db ACID_ARMOR
+	db 50, MUK
+		db CURSE
+		db FIRE_BLAST
 		db SLUDGE_BOMB
-		db TOXIC
+		db EXPLOSION
+		
+	db 50, NIDOKING
+		db EARTHQUAKE
+		db LOVELY_KISS
+		db THUNDER
+		db ICE_BEAM
 
-	db 44, CROBAT
-		db DOUBLE_TEAM
-		db QUICK_ATTACK
+	db 50, CROBAT
+		db CONFUSE_RAY
+		db SCREECH
 		db WING_ATTACK
 		db TOXIC
 
@@ -965,41 +989,41 @@ ChampionGroup:
 
 	; party
 
-	db 44, GYARADOS
-		db FLAIL
+	db 50, GYARADOS
+		db THUNDER
 		db RAIN_DANCE
 		db SURF
-		db HYPER_BEAM
+		db DOUBLE_EDGE
 
-	db 47, DRAGONITE
-		db THUNDER_WAVE
-		db TWISTER
-		db THUNDER
-		db HYPER_BEAM
-
-	db 47, DRAGONITE
-		db THUNDER_WAVE
-		db TWISTER
-		db BLIZZARD
-		db HYPER_BEAM
-
-	db 46, AERODACTYL
-		db WING_ATTACK
-		db ANCIENTPOWER
-		db ROCK_SLIDE
-		db HYPER_BEAM
-
-	db 46, CHARIZARD
-		db FLAMETHROWER
-		db WING_ATTACK
-		db SLASH
-		db HYPER_BEAM
+	db 50, DRAGONITE
+		db REST
+		db DRAGONBREATH
+		db REFLECT
+		db HAZE
 
 	db 50, DRAGONITE
 		db FIRE_BLAST
-		db SAFEGUARD
+		db WING_ATTACK
+		db HYDRO_PUMP
 		db OUTRAGE
-		db HYPER_BEAM
+
+	db 50, AERODACTYL
+		db WING_ATTACK
+		db ROCK_SLIDE
+		db FIRE_BLAST
+		db EARTHQUAKE
+
+	db 50, CHARIZARD
+		db FIRE_BLAST
+		db BELLY_DRUM
+		db ROCK_SLIDE
+		db EARTHQUAKE
+
+	db 55, DRAGONITE
+		db THUNDER
+		db ICE_BEAM
+		db DYNAMICPUNCH
+		db EXTREMESPEED
 
 	db $ff ; end
 
@@ -1039,7 +1063,7 @@ BrockGroup:
 		db CURSE
 		db ROCK_SLIDE
 		db ROAR
-		db EXPLOSION
+		db EARTHQUAKE
 
 	db 42, KABUTOPS
 		db SLASH
@@ -8606,7 +8630,7 @@ RedGroup:
 
 	db 100, ESPEON, LEFTOVERS
 		db GROWTH
-		db BITE
+		db BATON_PASS
 		db MORNING_SUN
 		db PSYCHIC_M
 
@@ -8624,7 +8648,7 @@ RedGroup:
 
 	db 100, CHARIZARD, LEFTOVERS
 		db FIRE_BLAST
-		db BELLY_DRUM
+		db SWORDS_DANCE
 		db EARTHQUAKE
 		db ROCK_SLIDE
 
