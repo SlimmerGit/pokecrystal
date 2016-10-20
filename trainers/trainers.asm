@@ -1037,35 +1037,41 @@ BrockGroup:
 
 	; BROCK (1)
 	db "BROCK@"
-	db 1 ; moves
+	db 3 ; item + moves
 
 	; party
 
-	db 41, GOLEM
+	db 41, GOLEM, NO_ITEM
 		db CURSE
 		db ROCK_SLIDE
 		db COUNTER
 		db EARTHQUAKE
 
-	db 41, RHYDON
+	db 41, RHYDON, NO_ITEM
 		db CURSE
 		db ROAR
 		db EARTHQUAKE
 		db ZAP_CANNON
 
-	db 42, OMASTAR
+	db 42, OMASTAR, NO_ITEM
 		db SLEEP_TALK
 		db SURF
 		db REST
 		db HAZE
 
-	db 44, ONIX
+	db 44, ONIX, NO_ITEM
 		db CURSE
 		db ROCK_SLIDE
 		db ROAR
 		db EARTHQUAKE
 
-	db 42, KABUTOPS
+	db 43, MAROWAK, THICK_CLUB
+		db FIRE_BLAST
+		db ROCK_SLIDE
+		db BODY_SLAM
+		db EARTHQUAKE
+
+	db 42, KABUTOPS, NO_ITEM
 		db SLASH
 		db SURF
 		db SWORDS_DANCE
@@ -1104,6 +1110,18 @@ MistyGroup:
 		db REST
 		db BLIZZARD
 		db SLEEP_TALK
+		
+	db 44, TENTACRUEL
+		db SURF
+		db SUBSTITUTE
+		db SWORDS_DANCE
+		db SLUDGE_BOMB
+		
+	db 45, VAPOREON
+		db SURF
+		db SLEEP_TALK
+		db REST
+		db GROWTH
 
 	db 47, STARMIE
 		db SURF
@@ -1150,6 +1168,12 @@ LtSurgeGroup:
 		db SLEEP_TALK
 		db THUNDERBOLT
 		db SURF
+		
+	db 44, JOLTEON
+		db AGILITY
+		db BATON_PASS
+		db THUNDERBOLT
+		db SUBSTITUTE
 
 	db 46, ELECTABUZZ
 		db ICE_PUNCH
@@ -1255,6 +1279,18 @@ ErikaGroup:
 		db LEECH_SEED
 		db ENCORE
 		db GIGA_DRAIN
+		
+	db 43, EXEGGUTOR
+		db SLEEP_POWDER
+		db EXPLOSION
+		db PSYCHIC_M
+		db GIGA_DRAIN
+		
+	db 46, VILEPLUME
+		db SLEEP_POWDER
+		db LEECH_SEED
+		db SLUDGE_BOMB
+		db MOONLIGHT
 
 	db 46, VICTREEBEL
 		db SLEEP_POWDER
@@ -2334,31 +2370,37 @@ JanineGroup:
 
 	; party
 
-	db 36, CROBAT
+	db 46, CROBAT
 		db SCREECH
 		db TOXIC
 		db MEAN_LOOK
 		db WING_ATTACK
 
-	db 36, WEEZING
+	db 46, WEEZING
 		db FIRE_BLAST
 		db SLUDGE_BOMB
 		db TOXIC
 		db EXPLOSION
 
-	db 36, WEEZING
+	db 46, WEEZING
 		db THUNDER
 		db SLUDGE_BOMB
 		db TOXIC
 		db EXPLOSION
 
-	db 33, ARIADOS
+	db 43, ARIADOS
 		db PROTECT
 		db GIGA_DRAIN
 		db TOXIC
 		db NIGHT_SHADE
+		
+	db 43, NIDOQUEEN
+		db LOVELY_KISS
+		db EARTHQUAKE
+		db THUNDERBOLT
+		db ICE_BEAM
 
-	db 39, VENOMOTH
+	db 49, VENOMOTH
 		db CURSE
 		db TOXIC
 		db SLUDGE_BOMB
@@ -4033,6 +4075,24 @@ SabrinaGroup:
 		db BARRIER
 		db SAFEGUARD
 		db BATON_PASS
+		db PSYCHIC_M
+		
+	db 46, GIRAFARIG
+		db AGILITY
+		db THUNDERBOLT
+		db BATON_PASS
+		db PSYCHIC_M
+		
+	db 47, HYPNO
+		db REFLECT
+		db THUNDERPUNCH
+		db ICE_PUNCH
+		db PSYCHIC_M
+		
+	db 47, SLOWKING
+		db REST
+		db SURF
+		db ICE_BEAM
 		db PSYCHIC_M
 
 	db 48, ALAKAZAM
@@ -6376,10 +6436,28 @@ BlaineGroup:
 		db FIRE_BLAST
 		db SUNNY_DAY
 		db CROSS_CHOP
+		
+	db 45, FLAREON
+		db SHADOW_BALL
+		db FIRE_BLAST
+		db IRON_TAIL
+		db ZAP_CANNON
+		
+	db 48, NINETALES
+		db HYPNOSIS
+		db FIRE_BLAST
+		db ROAR
+		db CONFUSE_RAY
+		
+	db 50, ARCANINE
+		db CRUNCH
+		db FIRE_BLAST
+		db EXTREMESPEED
+		db BODY_SLAM
 
 	db 50, RAPIDASH
 		db IRON_TAIL
-		db CURSE
+		db SUNNY_DAY
 		db HYPNOSIS
 		db FIRE_BLAST
 
@@ -8680,17 +8758,17 @@ BlueGroup:
 		db WING_ATTACK
 		db STEEL_WING
 
-	db 54, ALAKAZAM
+	db 56, ALAKAZAM
 		db ENCORE
 		db RECOVER
 		db PSYCHIC_M
 		db FIRE_PUNCH
 
-	db 56, RHYDON
-		db ROAR
-		db CURSE
-		db ROCK_SLIDE
-		db EARTHQUAKE
+	db 60, UMBREON
+		db MEAN_LOOK
+		db TOXIC
+		db CHARM
+		db REST
 
 	db 58, GYARADOS
 		db THUNDER
