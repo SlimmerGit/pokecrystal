@@ -223,9 +223,9 @@ PidgeyEvosAttacks:
 	db EVOLVE_LEVEL, 18, PIDGEOTTO
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 5, TOXIC
+	db 5, QUICK_ATTACK
 	db 9, GUST
-	db 15, QUICK_ATTACK
+	db 15, TOXIC
 	db 21, WHIRLWIND
 	db 29, WING_ATTACK
 	db 37, STEEL_WING
@@ -236,11 +236,11 @@ PidgeottoEvosAttacks:
 	db EVOLVE_LEVEL, 36, PIDGEOT
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, TOXIC
+	db 1, QUICK_ATTACK
 	db 1, GUST
-	db 5, TOXIC
+	db 5, QUICK_ATTACK
 	db 9, GUST
-	db 15, QUICK_ATTACK
+	db 15, TOXIC
 	db 23, WHIRLWIND
 	db 33, WING_ATTACK
 	db 43, STEEL_WING
@@ -250,12 +250,12 @@ PidgeottoEvosAttacks:
 PidgeotEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, TOXIC
-	db 1, GUST
 	db 1, QUICK_ATTACK
-	db 5, TOXIC
+	db 1, GUST
+	db 1, TOXIC
+	db 5, QUICK_ATTACK
 	db 9, GUST
-	db 15, QUICK_ATTACK
+	db 15, TOXIC
 	db 23, WHIRLWIND
 	db 33, WING_ATTACK
 	db 46, STEEL_WING
