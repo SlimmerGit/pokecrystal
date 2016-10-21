@@ -7103,7 +7103,7 @@ PsychicGroup:
 	; party
 
 	db 24, NATU
-		db LEER
+		db HAZE
 		db NIGHT_SHADE
 		db FUTURE_SIGHT
 		db CONFUSE_RAY
@@ -7112,7 +7112,7 @@ PsychicGroup:
 		db DISABLE
 		db PSYBEAM
 		db RECOVER
-		db FUTURE_SIGHT
+		db ENCORE
 
 	db $ff ; end
 
@@ -7365,7 +7365,7 @@ PicnickerGroup:
 	db 31, CLEFAIRY
 		db ENCORE
 		db SING
-		db DOUBLESLAP
+		db DOUBLE_EDGE
 		db MINIMIZE
 
 	db $ff ; end
@@ -7380,9 +7380,9 @@ PicnickerGroup:
 
 	db 37, CLEFAIRY
 		db ENCORE
-		db DOUBLESLAP
-		db MINIMIZE
-		db METRONOME
+		db DOUBLE_EDGE
+		db SING
+		db FIRE_BLAST
 
 	db $ff ; end
 
@@ -7434,20 +7434,20 @@ PicnickerGroup:
 	; party
 
 	db 36, PONYTA
-		db DOUBLE_TEAM
-		db STOMP
+		db HYPNOSIS
+		db TAKE_DOWN
 		db FIRE_SPIN
 		db SUNNY_DAY
 
 	db 34, RAICHU
-		db SWIFT
-		db MUD_SLAP
-		db QUICK_ATTACK
+		db SEISMIC_TOSS
+		db SURF
+		db RAIN_DANCE
 		db THUNDERBOLT
 
 	db 36, PONYTA
-		db DOUBLE_TEAM
-		db STOMP
+		db HYPNOSIS
+		db TAKE_DOWN
 		db FIRE_SPIN
 		db SUNNY_DAY
 
@@ -7476,20 +7476,20 @@ PicnickerGroup:
 
 	db 30, WEEPINBELL
 		db SLEEP_POWDER
-		db POISONPOWDER
+		db SYNTHESIS
 		db STUN_SPORE
 		db SLUDGE_BOMB
 
 	db 32, NIDOKING
 		db EARTHQUAKE
 		db DOUBLE_KICK
-		db POISON_STING
+		db LOVELY_KISS
 		db IRON_TAIL
 
 	db 32, NIDOQUEEN
 		db EARTHQUAKE
 		db DOUBLE_KICK
-		db TAIL_WHIP
+		db LOVELY_KISS
 		db BODY_SLAM
 
 	db $ff ; end
@@ -7519,19 +7519,19 @@ PicnickerGroup:
 		db STUN_SPORE
 		db SUNNY_DAY
 		db LEECH_SEED
-		db COTTON_SPORE
+		db ENCORE
 
 	db 33, JUMPLUFF
 		db SUNNY_DAY
 		db SLEEP_POWDER
 		db LEECH_SEED
-		db COTTON_SPORE
+		db ENCORE
 
 	db 38, VENUSAUR
 		db SOLARBEAM
-		db RAZOR_LEAF
-		db HEADBUTT
-		db MUD_SLAP
+		db GIGA_DRAIN
+		db BODY_SLAM
+		db SLEEP_POWDER
 
 	db $ff ; end
 
@@ -7544,10 +7544,10 @@ PicnickerGroup:
 	; party
 
 	db 43, CLEFAIRY
-		db METRONOME
-		db ENCORE
+		db DOUBLE_EDGE
+		db FIRE_BLAST
 		db MOONLIGHT
-		db MINIMIZE
+		db SHADOW_BALL
 
 	db $ff ; end
 
@@ -7815,23 +7815,23 @@ CamperGroup:
 	db 33, GRAVELER
 		db SELFDESTRUCT
 		db ROCK_THROW
-		db HARDEN
+		db CURSE
 		db MAGNITUDE
 
 	db 33, GRAVELER
 		db SELFDESTRUCT
 		db ROCK_THROW
-		db HARDEN
+		db CURSE
 		db MAGNITUDE
 
 	db 36, MAGCARGO
 		db ROCK_THROW
-		db HARDEN
-		db AMNESIA
+		db EARTHQUAKE
+		db CURSE
 		db FLAMETHROWER
 
 	db 34, GOLDUCK
-		db DISABLE
+		db HYPNOSIS
 		db PSYCHIC_M
 		db SURF
 		db PSYCH_UP
@@ -7866,16 +7866,16 @@ ExecutiveFGroup:
 	; party
 
 	db 32, ARBOK
-		db WRAP
-		db POISON_STING
-		db BITE
+		db GIGA_DRAIN
+		db SLUDGE_BOMB
+		db EARTHQUAKE
 		db GLARE
 
 	db 32, VILEPLUME
-		db ABSORB
-		db SWEET_SCENT
+		db GIGA_DRAIN
+		db SLUDGE_BOMB
 		db SLEEP_POWDER
-		db ACID
+		db SWORDS_DANCE
 
 	db 32, MURKROW
 		db PECK
@@ -7897,11 +7897,11 @@ ExecutiveFGroup:
 		db WRAP
 		db LEER
 		db POISON_STING
-		db BITE
+		db GIGA_DRAIN
 
 	db 23, GLOOM
 		db ABSORB
-		db SWEET_SCENT
+		db LEECH_SEED
 		db SLEEP_POWDER
 		db ACID
 
@@ -8474,7 +8474,7 @@ TwinsGroup:
 		db GROWL
 		db ENCORE
 		db DOUBLESLAP
-		db METRONOME
+		db SING
 
 	db 16, JIGGLYPUFF
 		db SING
@@ -8502,7 +8502,7 @@ TwinsGroup:
 		db GROWL
 		db ENCORE
 		db DOUBLESLAP
-		db METRONOME
+		db SING
 
 	db $ff ; end
 
@@ -8576,15 +8576,15 @@ TwinsGroup:
 
 	db 35, DRATINI
 		db THUNDER_WAVE
-		db TWISTER
+		db DRAGONBREATH
 		db FLAMETHROWER
-		db HEADBUTT
+		db BODY_SLAM
 
 	db 35, DRATINI
 		db THUNDER_WAVE
-		db TWISTER
+		db DRAGONBREATH
 		db ICE_BEAM
-		db HEADBUTT
+		db DOUBLE_EDGE
 
 	db $ff ; end
 
@@ -8598,15 +8598,15 @@ TwinsGroup:
 
 	db 38, DRATINI
 		db THUNDER_WAVE
-		db TWISTER
-		db ICE_BEAM
-		db HEADBUTT
+		db DRAGONBREATH
+		db FLAMETHROWER
+		db BODY_SLAM
 
 	db 38, DRATINI
 		db THUNDER_WAVE
-		db TWISTER
-		db FLAMETHROWER
-		db HEADBUTT
+		db DRAGONBREATH
+		db ICE_BEAM
+		db DOUBLE_EDGE
 
 	db $ff ; end
 
@@ -8884,13 +8884,13 @@ GruntFGroup:
 
 	db 18, EKANS
 		db WRAP
-		db LEER
+		db SCREECH
 		db POISON_STING
-		db BITE
+		db GIGA_DRAIN
 
 	db 18, GLOOM
 		db ABSORB
-		db SWEET_SCENT
+		db LEECH_SEED
 		db STUN_SPORE
 		db SLEEP_POWDER
 
@@ -8920,13 +8920,13 @@ MysticalmanGroup:
 		db LICK
 		db HYPNOSIS
 		db MEAN_LOOK
-		db CURSE
+		db PERISH_SONG
 
 	db 25, ELECTRODE
-		db SCREECH
-		db SONICBOOM
+		db REST
+		db TOXIC
 		db THUNDER
-		db ROLLOUT
+		db REFLECT
 
 	db $ff ; end
 
