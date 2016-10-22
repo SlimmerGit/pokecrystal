@@ -2,13 +2,50 @@ const_value set 2
 	const OLIVINELIGHTHOUSE6F_JASMINE
 	const OLIVINELIGHTHOUSE6F_MONSTER
 	const OLIVINELIGHTHOUSE6F_POKE_BALL
+	const OLIVINELIGHTHOUSE6F_ZAPDOS
 
 OlivineLighthouse6F_MapScriptHeader:
 .MapTriggers:
 	db 0
 
 .MapCallbacks:
-	db 0
+	db 1
+	
+	dbw MAPCALLBACK_OBJECTS, .Zapdos
+	
+.Zapdos
+	checkevent EVENT_FOUGHT_ZAPDOS
+	iftrue .NoAppear
+	checkevent EVENT_BEAT_CHAMPION_LANCE
+	iftrue .Appear
+	jump .NoAppear
+	
+.Appear:
+ 	appear OLIVINELIGHTHOUSE6F_ZAPDOS
+ 	return
+
+.NoAppear:
+	disappear OLIVINELIGHTHOUSE6F_ZAPDOS
+	return
+	
+Zapdos:
+	faceplayer
+	opentext
+	writetext ZapdosText
+	cry ZAPDOS
+	pause 15
+	closetext
+	setevent EVENT_FOUGHT_ZAPDOS
+	writecode VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
+	loadwildmon ZAPDOS, 50
+	startbattle
+	disappear OLIVINELIGHTHOUSE6F_ZAPDOS
+	reloadmapafterbattle
+	end
+
+ZapdosText:
+	text "Zaaaaap!"
+	done	
 
 JasmineScript_0x60b91:
 	faceplayer
@@ -278,3 +315,5 @@ OlivineLighthouse6F_MapEventHeader:
 	person_event SPRITE_JASMINE, 8, 8, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, JasmineScript_0x60b91, EVENT_OLIVINE_LIGHTHOUSE_JASMINE
 	person_event SPRITE_MONSTER, 8, 9, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BROWN, PERSONTYPE_SCRIPT, 0, MonsterScript_0x60c3a, -1
 	person_event SPRITE_POKE_BALL, 4, 3, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, OlivineLighthouse6FSuperPotion, EVENT_OLIVINE_LIGHTHOUSE_6F_SUPER_POTION
+	person_event SPRITE_BIRD, 7, 10, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, (1 << 3) | PAL_OW_YELLOW,   PERSONTYPE_SCRIPT, 0, Zapdos, EVENT_OLIVINE_LIGHTHOUSE_ZAPDOS
+ 
