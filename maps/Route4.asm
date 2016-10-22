@@ -3,13 +3,50 @@ const_value set 2
 	const ROUTE4_LASS1
 	const ROUTE4_LASS2
 	const ROUTE4_POKE_BALL
+	const ROUTE4_MEWTWO
 
 Route4_MapScriptHeader:
 .MapTriggers:
 	db 0
 
 .MapCallbacks:
-	db 0
+	db 1
+	
+	dbw MAPCALLBACK_OBJECTS, .Mewtwo
+	
+Mewtwo:
+	checkevent EVENT_FOUGHT_MEWTWO
+	iftrue .NoAppear
+	checkevent EVENT_BEAT_RED
+	iftrue .Appear
+	jump .NoAppear
+
+.Appear:
+	appear ROUTE4_MEWTWO
+	return
+
+.NoAppear:
+	disappear ROUTE4_MEWTWO
+	return
+
+Mewtwo:
+	faceplayer
+	opentext
+	writetext MewtwoText
+	cry MEWTWO
+	pause 15
+	closetext
+	setevent EVENT_FOUGHT_MEWTWO
+	writecode VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
+	loadwildmon MEWTWO, 70
+	startbattle
+	disappear ROUTE4_MEWTWO
+	reloadmapafterbattle
+	end
+
+MewtwoText:
+	text "Mew!"
+	done
 
 TrainerBird_keeperHank:
 	trainer EVENT_BEAT_BIRD_KEEPER_HANK, BIRD_KEEPER, HANK, Bird_keeperHankSeenText, Bird_keeperHankBeatenText, 0, Bird_keeperHankScript
@@ -138,8 +175,9 @@ Route4_MapEventHeader:
 	signpost 3, 10, SIGNPOST_ITEM, Route4HiddenUltraBall
 
 .PersonEvents:
-	db 4
+	db 5
 	person_event SPRITE_YOUNGSTER, 9, 17, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 3, TrainerBird_keeperHank, -1
 	person_event SPRITE_LASS, 8, 9, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 4, TrainerPicnickerHope, -1
 	person_event SPRITE_LASS, 6, 21, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 4, TrainerPicnickerSharon, -1
 	person_event SPRITE_POKE_BALL, 3, 26, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route4HPUp, EVENT_ROUTE_4_HP_UP
+	person_event SPRITE_MONSTER, 4, 30, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREY,   PERSONTYPE_SCRIPT, 0, Mewtwo, EVENT_ROUTE_4_MEWTWO
