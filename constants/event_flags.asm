@@ -879,8 +879,8 @@
 	const EVENT_35D
 	const EVENT_35E
 	const EVENT_35F
-	const EVENT_360
-	const EVENT_361
+	const EVENT_ROUTE_4_MEWTWO
+	const EVENT_FOUGHT_MEWTWO
 	const EVENT_362
 	const EVENT_363
 	const EVENT_364
