@@ -17,6 +17,16 @@ OaksLab_MapScriptHeader:
 Oak:
 	faceplayer
 	opentext
+	checkevent EVENT_GOT_GS_BALL_FROM_OAK
+	iftrue .skip
+	checkevent EVENT_BEAT_RED
+	iffalse .skip
+	writetext OakGiveGSBallText
+	waitbutton
+	verbosegiveitem GS_BALL
+	setevent EVENT_CAN_GIVE_GS_BALL_TO_KURT
+	setevent EVENT_GOT_GS_BALL_FROM_OAK
+.skip
 	checkevent EVENT_OPENED_MT_SILVER
 	iftrue .CheckPokedex
 	checkevent EVENT_TALKED_TO_OAK_IN_KANTO
@@ -78,6 +88,14 @@ OaksLabTrashcan:
 
 OaksLabPC:
 	jumptext OaksLabPCText
+	
+OakGiveGSBallText:
+	text "As a special deal,"
+	line "a GS BALL has been"
+	cont "sent just for you!"
+
+	para "Please accept it!"
+	done
 
 OakWelcomeKantoText:
 	text "OAK: Ah, <PLAY_G>!"

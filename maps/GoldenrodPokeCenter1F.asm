@@ -22,7 +22,7 @@ GoldenrodPokeCenter1F_GSBallTriggerLeft:
 	end
 
 .gsball
-	checkevent EVENT_GOT_GS_BALL_FROM_POKECOM_CENTER
+	checkevent EVENT_GOT_GS_BALL_FROM_OAK
 	iftrue .cancel
 	playsound SFX_EXIT_BUILDING
 	moveperson GOLDENRODPOKECENTER1F_LINK_RECEPTIONIST, $0, $7
@@ -35,7 +35,7 @@ GoldenrodPokeCenter1F_GSBallTriggerLeft:
 	writetext UnknownText_0x622f0
 	waitbutton
 	verbosegiveitem GS_BALL
-	setevent EVENT_GOT_GS_BALL_FROM_POKECOM_CENTER
+	setevent EVENT_GOT_GS_BALL_FROM_OAK
 	setevent EVENT_CAN_GIVE_GS_BALL_TO_KURT
 	writetext UnknownText_0x62359
 	waitbutton
@@ -54,7 +54,7 @@ GoldenrodPokeCenter1F_GSBallTriggerRight:
 	end
 
 .gsball
-	checkevent EVENT_GOT_GS_BALL_FROM_POKECOM_CENTER
+	checkevent EVENT_GOT_GS_BALL_FROM_OAK
 	iftrue .cancel
 	playsound SFX_EXIT_BUILDING
 	moveperson GOLDENRODPOKECENTER1F_LINK_RECEPTIONIST, $0, $7
@@ -67,7 +67,7 @@ GoldenrodPokeCenter1F_GSBallTriggerRight:
 	writetext UnknownText_0x622f0
 	waitbutton
 	verbosegiveitem GS_BALL
-	setevent EVENT_GOT_GS_BALL_FROM_POKECOM_CENTER
+	setevent EVENT_GOT_GS_BALL_FROM_OAK
 	setevent EVENT_CAN_GIVE_GS_BALL_TO_KURT
 	writetext UnknownText_0x62359
 	waitbutton

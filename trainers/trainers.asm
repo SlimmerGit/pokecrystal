@@ -836,7 +836,7 @@ BrunoGroup:
 	db 50, HITMONTOP
 		db HI_JUMP_KICK
 		db CURSE
-		db STRENGHT
+		db STRENGTH
 		db REST
 
 	db 50, HITMONLEE

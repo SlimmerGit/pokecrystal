@@ -1666,7 +1666,7 @@ GoldeenEvosAttacks:
 	db 10, SUPERSONIC
 	db 15, HORN_ATTACK
 	db 24, REST
-	db 24, SLEE_TALK
+	db 24, SLEEP_TALK
 	db 29, DOUBLE_EDGE
 	db 38, HYDRO_PUMP
 	db 43, SWORDS_DANCE
@@ -3035,7 +3035,7 @@ ScizorEvosAttacks:
 	db 36, SLASH
 	db 42, SWORDS_DANCE
 	db 48, BATON_PASS
-	cb 48, STEEL_WING
+	db 48, STEEL_WING
 	db 0 ; no more level-up moves
 
 ShuckleEvosAttacks:
@@ -3106,7 +3106,7 @@ UrsaringEvosAttacks:
 	db 15, FURY_SWIPES
 	db 22, CURSE
 	db 29, REST
-	db 29, SLEEP TALK
+	db 29, SLEEP_TALK
 	db 39, FIRE_PUNCH
 	db 49, EARTHQUAKE
 	db 59, ZAP_CANNON
@@ -3215,7 +3215,7 @@ DelibirdEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PRESENT
 	db 5, THIEF
-	db 10, RAPID SPIN
+	db 10, RAPID_SPIN
 	db 15, QUICK_ATTACK
 	db 20, CURSE
 	db 25, REST
@@ -3255,7 +3255,7 @@ HoundourEvosAttacks:
 	db 1, LEER
 	db 1, EMBER
 	db 7, ROAR
-	db 13, SUNNY DAY
+	db 13, SUNNY_DAY
 	db 20, PURSUIT
 	db 27, COUNTER
 	db 32, REST
@@ -3269,7 +3269,7 @@ HoundoomEvosAttacks:
 	db 1, LEER
 	db 1, EMBER
 	db 7, ROAR
-	db 13, SUNNY DAY
+	db 13, SUNNY_DAY
 	db 20, PURSUIT
 	db 30, COUNTER
 	db 37, REST
@@ -3416,7 +3416,7 @@ SmoochumEvosAttacks:
 	db 33, PROTECT
 	db 37, PSYCHIC_M
 	db 45, PERISH_SONG
-	db 45, NIGTHMARE
+	db 45, NIGHTMARE
 	db 49, BLIZZARD
 	db 0 ; no more level-up moves
 
@@ -3455,7 +3455,7 @@ MiltankEvosAttacks:
 	db 13, STOMP
 	db 15, ATTRACT
 	db 19, MILK_DRINK
-	db 26, PSYCHUP
+	db 26, PSYCH_UP
 	db 31, CURSE
 	db 36, SEISMIC_TOSS
 	db 40, EARTHQUAKE

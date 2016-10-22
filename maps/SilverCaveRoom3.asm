@@ -25,6 +25,7 @@ Red:
 	writetext .Text3
 	waitbutton
 	closetext
+	setevent EVENT_BEAT_RED
 	special Special_FadeBlackQuickly
 	special Special_ReloadSpritesNoPalettes
 	disappear SILVERCAVEROOM3_RED
