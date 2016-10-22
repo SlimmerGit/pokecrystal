@@ -848,8 +848,8 @@
 	const EVENT_33F
 	const EVENT_GOT_GS_BALL_FROM_OAK
 ; ???
-	const EVENT_341
-	const EVENT_342
+	const EVENT_ICE_PATH_ARTICUNO
+	const EVENT_FOUGHT_ARTICUNO
 	const EVENT_343
 	const EVENT_344
 	const EVENT_345
