@@ -8,6 +8,7 @@ const_value set 2
 	const BURNEDTOWERB1F_SUICUNE2
 	const BURNEDTOWERB1F_POKE_BALL
 	const BURNEDTOWERB1F_EUSINE
+	const BURNEDTOWERB1F_MOLTRES
 
 BurnedTowerB1F_MapScriptHeader:
 .MapTriggers:
@@ -18,11 +19,27 @@ BurnedTowerB1F_MapScriptHeader:
 	dw UnknownScript_0x18615f, 0
 
 .MapCallbacks:
-	db 1
+	db 2
 
 	; callbacks
 
 	dbw MAPCALLBACK_TILES, BurnedTowerB1FLadderCallback
+	dbw MAPCALLBACK_OBJECTS, .Moltres
+
+.Moltres:
+	checkevent EVENT_FOUGHT_MOLTRES
+	iftrue .NoAppear
+	checkevent EVENT_BEAT_CHAMPION_LANCE
+	iftrue .Appear
+	jump .NoAppear
+
+.Appear:
+	appear BURNEDTOWERB1F_MOLTRES
+	return
+
+.NoAppear:
+	disappear BURNEDTOWERB1F_MOLTRES
+	return
 
 UnknownScript_0x18615e:
 	end
@@ -122,6 +139,25 @@ UnknownScript_0x18622a:
 	playsound SFX_EXIT_BUILDING
 	waitsfx
 	end
+
+Moltres:
+	faceplayer
+	opentext
+	writetext MoltresText
+	cry MOLTRES
+	pause 15
+	closetext
+	setevent EVENT_FOUGHT_MOLTRES
+	writecode VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
+	loadwildmon MOLTRES, 50
+	startbattle
+	disappear BURNEDTOWERB1F_MOLTRES
+	reloadmapafterbattle
+	end
+	
+MoltresText:
+	text "Gyaoo!"
+	done	
 
 BurnedTowerB1FTMEndure:
 	itemball TM_ENDURE
@@ -261,7 +297,7 @@ BurnedTowerB1F_MapEventHeader:
 	db 0
 
 .PersonEvents:
-	db 9
+	db 10
 	person_event SPRITE_BOULDER, 8, 17, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, BurnedTowerB1FBoulder, -1
 	person_event SPRITE_RAIKOU, 3, 7, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, (1 << 3) | PAL_OW_BROWN, PERSONTYPE_SCRIPT, 0, ObjectEvent, EVENT_BURNED_TOWER_B1F_BEASTS_1
 	person_event SPRITE_ENTEI, 3, 12, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, ObjectEvent, EVENT_BURNED_TOWER_B1F_BEASTS_1
@@ -271,3 +307,4 @@ BurnedTowerB1F_MapEventHeader:
 	person_event SPRITE_SUICUNE, 4, 10, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_SILVER, PERSONTYPE_SCRIPT, 0, ObjectEvent, EVENT_BURNED_TOWER_B1F_BEASTS_2
 	person_event SPRITE_POKE_BALL, 4, 16, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, BurnedTowerB1FTMEndure, EVENT_BURNED_TOWER_B1F_TM_ENDURE
 	person_event SPRITE_SUPER_NERD, 12, 10, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, BurnedTowerB1FEusine, EVENT_EUSINE_IN_BURNED_TOWER
+	person_event SPRITE_BIRD, 4, 9, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED,   PERSONTYPE_SCRIPT, 0, Moltres, EVENT_BURNED_TOWER_MOLTRES
