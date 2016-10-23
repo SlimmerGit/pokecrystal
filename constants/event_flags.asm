@@ -911,8 +911,8 @@
 	const EVENT_37D
 	const EVENT_37E
 	const EVENT_37F
-	const EVENT_380
-	const EVENT_381
+	const EVENT_SILVER_CAVE_MEW
+	const EVENT_FOUGHT_MEW
 	const EVENT_382
 	const EVENT_383
 	const EVENT_384
