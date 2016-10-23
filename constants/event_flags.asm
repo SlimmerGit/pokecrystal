@@ -895,8 +895,8 @@
 	const EVENT_36D
 	const EVENT_36E
 	const EVENT_36F
-	const EVENT_370
-	const EVENT_371
+	const EVENT_BURNED_TOWER_MOLTRES
+	const EVENT_FOUGHT_MOLTRES
 	const EVENT_372
 	const EVENT_373
 	const EVENT_374
