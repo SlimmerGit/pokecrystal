@@ -13,7 +13,7 @@ GoldenrodBillsHouse_MapScriptHeader:
 BillsHouseBill:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_EEVEE
+	checkevent EVENT_GOT_PORYGON
 	iftrue UnknownScript_0x54c1f
 	writetext UnknownText_0x54c74
 	yesorno
@@ -26,8 +26,8 @@ BillsHouseBill:
 	writetext UnknownText_0x54dae
 	playsound SFX_CAUGHT_MON
 	waitsfx
-	givepoke EEVEE, 20
-	setevent EVENT_GOT_EEVEE
+	givepoke PORYGON, 15
+	setevent EVENT_GOT_PORYGON
 	writetext UnknownText_0x54dc1
 	waitbutton
 	closetext
@@ -111,7 +111,7 @@ BillsHouseRadio:
 UnknownText_0x54c74:
 	text "BILL: Hi, <PLAYER>!"
 	line "Do us a favor and"
-	cont "take this EEVEE."
+	cont "take this PORYGON."
 
 	para "It came over when"
 	line "I was adjusting"
@@ -144,15 +144,15 @@ UnknownText_0x54d3f:
 
 UnknownText_0x54dae:
 	text "<PLAYER> received"
-	line "EEVEE!"
+	line "PORYGON!"
 	done
 
 UnknownText_0x54dc1:
 	text "BILL: PROF.ELM"
-	line "claims EEVEE may"
+	line "claims PORYGON may"
 
-	para "evolve in new and"
-	line "unknown ways."
+	para "evolve in a new and"
+	line "unknown way."
 	done
 
 UnknownText_0x54e02:
