@@ -73,36 +73,36 @@ GoldenrodGmeCornerTMVendor_LoopScript: ; 056c36
 	jump GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 
 .Thunder:
-	checkcoins 5500
+	checkcoins 2000
 	if_equal $2, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
 	itemtotext TM_THUNDER, $0
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 	giveitem TM_THUNDER
 	iffalse GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	takecoins 5500
+	takecoins 2000
 	jump GoldenrodGmeCornerTMVendor_FinishScript
 
 .Blizzard:
-	checkcoins 5500
+	checkcoins 2000
 	if_equal $2, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
 	itemtotext TM_BLIZZARD, $0
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 	giveitem TM_BLIZZARD
 	iffalse GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	takecoins 5500
+	takecoins 2000
 	jump GoldenrodGmeCornerTMVendor_FinishScript
 
 .FireBlast:
-	checkcoins 5500
+	checkcoins 2000
 	if_equal $2, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
 	itemtotext TM_FIRE_BLAST, $0
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 	giveitem TM_FIRE_BLAST
 	iffalse GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	takecoins 5500
+	takecoins 2000
 	jump GoldenrodGmeCornerTMVendor_FinishScript
 
 GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript:
@@ -152,9 +152,9 @@ GoldenrodGameCornerTMVendorMenuData:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "TM25    5500@"
-	db "TM14    5500@"
-	db "TM38    5500@"
+	db "TM25    2000@"
+	db "TM14    2000@"
+	db "TM38    2000@"
 	db "CANCEL@"
 
 
@@ -171,63 +171,63 @@ GoldenrodGameCornerPrizeMonVendorScript:
 	loadmenudata .MenuDataHeader
 	verticalmenu
 	closewindow
-	if_equal $1, .abra
-	if_equal $2, .cubone
-	if_equal $3, .wobbuffet
+	if_equal $1, .bulbasaur
+	if_equal $2, .charmander
+	if_equal $3, .squirtle
 	jump GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 
-.abra
-	checkcoins 100
+.bulbasaur
+	checkcoins 1000
 	if_equal $2, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
 	checkcode VAR_PARTYCOUNT
 	if_equal $6, GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	pokenamemem ABRA, $0
+	pokenamemem BULBASAUR, $0
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 	waitsfx
 	playsound SFX_TRANSACTION
 	writetext GoldenrodGameCornerPrizeVendorHereYouGoText
 	waitbutton
-	writebyte ABRA
+	writebyte BULBASAUR
 	special Special_GameCornerPrizeMonCheckDex
-	givepoke ABRA, 5
-	takecoins 100
+	givepoke BULBASAUR, 5
+	takecoins 1000
 	jump .loop
 
-.cubone
-	checkcoins 800
+.charmander
+	checkcoins 1000
 	if_equal $2, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
 	checkcode VAR_PARTYCOUNT
 	if_equal $6, GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	pokenamemem CUBONE, $0
+	pokenamemem CHARMANDER, $0
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 	waitsfx
 	playsound SFX_TRANSACTION
 	writetext GoldenrodGameCornerPrizeVendorHereYouGoText
 	waitbutton
-	writebyte CUBONE
+	writebyte CHARMANDER
 	special Special_GameCornerPrizeMonCheckDex
-	givepoke CUBONE, 15
-	takecoins 800
+	givepoke CHARMANDER, 5
+	takecoins 1000
 	jump .loop
 
-.wobbuffet
-	checkcoins 1500
+.squirtle
+	checkcoins 1000
 	if_equal $2, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
 	checkcode VAR_PARTYCOUNT
 	if_equal $6, GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	pokenamemem WOBBUFFET, $0
+	pokenamemem SQUIRTLE, $0
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 	waitsfx
 	playsound SFX_TRANSACTION
 	writetext GoldenrodGameCornerPrizeVendorHereYouGoText
 	waitbutton
-	writebyte WOBBUFFET
+	writebyte SQUIRTLE
 	special Special_GameCornerPrizeMonCheckDex
-	givepoke WOBBUFFET, 15
-	takecoins 1500
+	givepoke SQUIRTLE, 5
+	takecoins 1000
 	jump .loop
 
 
@@ -241,9 +241,9 @@ GoldenrodGameCornerPrizeMonVendorScript:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "ABRA        100@"
-	db "CUBONE      800@"
-	db "WOBBUFFET  1500@"
+	db "BULBASAUR  1000@"
+	db "CHARMANDER 1000@"
+	db "SQUIRTLE   1000@"
 	db "CANCEL@"
 
 
