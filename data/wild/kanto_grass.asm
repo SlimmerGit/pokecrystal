@@ -37,6 +37,7 @@
 	db 10, GEODUDE
 	db 8, CLEFAIRY
 	db 8, CLEFAIRY
+	db 4, CLEFFA
 	; day
 	db 6, ZUBAT
 	db 8, GEODUDE
@@ -89,6 +90,7 @@
 	db 16, ONIX
 	db 12, ZUBAT
 	db 15, MAROWAK
+	db 5, MAGBY
 	db 15, KANGASKHAN
 	db 15, KANGASKHAN
 	; day
@@ -197,6 +199,7 @@
 	db 5, PIDGEY
 	db 7, BUTTERFREE
 	db 7, LEDIAN
+	db 3, PICHU
 	db 4, PIKACHU
 	db 4, PIKACHU
 	; day
@@ -277,6 +280,7 @@
 	db 13, SNUBBULL
 	db 15, PIDGEOTTO
 	db 12, ABRA
+	db 4, IGGLYBUFF
 	db 14, JIGGLYPUFF
 	db 14, ABRA
 	db 14, ABRA
@@ -358,6 +362,7 @@
 	db 19, PIDGEOTTO
 	db 16, ABRA
 	db 17, GROWLITHE
+	db 17, VULPIX
 	db 16, JIGGLYPUFF
 	db 18, KADABRA
 	db 18, KADABRA
@@ -372,6 +377,7 @@
 	; nite
 	db 17, MEOWTH
 	db 20, NOCTOWL
+	db 17, VULPIX
 	db 16, ABRA
 	db 17, HAUNTER
 	db 16, JIGGLYPUFF
@@ -413,6 +419,7 @@
 	db 15, RATICATE
 	db 15, FEAROW
 	db 15, MAROWAK
+	db 5, ELEKID
 	db 16, ELECTABUZZ
 	db 16, ELECTABUZZ
 	; day
@@ -654,6 +661,7 @@
 	db 3, RATTATA
 	db 3, SPEAROW
 	db 5, SPEAROW
+	db 5, MANKEY
 	db 4, DODUO
 	db 6, PONYTA
 	db 7, FEAROW
@@ -662,6 +670,7 @@
 	db 3, RATTATA
 	db 3, SPEAROW
 	db 5, SPEAROW
+	db 5, MANKEY
 	db 4, DODUO
 	db 6, PONYTA
 	db 7, FEAROW
