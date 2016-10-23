@@ -2025,6 +2025,11 @@ SnorlaxEvosAttacks:
 	db 54, FIRE_BLAST
 	db 54, THUNDER
 	db 57, SELFDESTRUCT
+	db 60, BODY_SLAM
+	db 65, REST
+	db 65, SLEEP_TALK
+	db 70, CURSE
+	db 75, BELLY_DRUM
 	db 0 ; no more level-up moves
 
 ArticunoEvosAttacks:
