@@ -358,6 +358,7 @@
 	db 22, NATU
 	db 18, NATU
 	db 24, NATU
+	db 18 AERODACTYL
 	db 20, SMEARGLE
 	db 22, SMEARGLE
 	db 22, SMEARGLE
@@ -628,6 +629,7 @@
 	db 32, MACHOKE
 	db 31, GEODUDE
 	db 30, RATICATE
+	db 5, TYROGUE
 	db 28, MACHOP
 	db 30, GOLBAT
 	db 30, GOLBAT
@@ -636,6 +638,7 @@
 	db 32, MACHOKE
 	db 31, GEODUDE
 	db 30, RATICATE
+	db 5, TYROGUE
 	db 28, MACHOP
 	db 30, GOLBAT
 	db 30, GOLBAT
@@ -790,6 +793,7 @@
 	db 25, ZUBAT
 	db 25, GOLBAT
 	db 26, SWINUB
+	db 5, SMOOCHUM
 	db 22, JYNX
 	db 24, JYNX
 	db 26, JYNX
@@ -1275,6 +1279,8 @@
 	db 4, EKANS
 	db 5, RATTATA
 	db 7, BELLSPROUT
+	db 6, MAREEP
+	db 7, MAREEP
 	db 6, HOPPIP
 	db 7, PIDGEY
 	db 7, HOPPIP
@@ -1283,6 +1289,8 @@
 	db 4, EKANS
 	db 5, RATTATA
 	db 7, BELLSPROUT
+	db 6, MAREEP
+	db 7, MAREEP
 	db 6, HOPPIP
 	db 7, PIDGEY
 	db 7, HOPPIP
@@ -1518,6 +1526,7 @@
 	db 15, SENTRET
 	db 16, PIDGEOTTO
 	db 16, FARFETCH_D
+	db 15, GIRAFARIG
 	db 15, FURRET
 	db 17, RATICATE
 	db 17, FURRET
@@ -1526,6 +1535,7 @@
 	db 15, SENTRET
 	db 16, PIDGEOTTO
 	db 16, FARFETCH_D
+	db 15, GIRAFARIG
 	db 15, FURRET
 	db 17, RATICATE
 	db 17, FURRET
@@ -1533,6 +1543,7 @@
 	; nite
 	db 15, VENONAT
 	db 16, NOCTOWL
+	db 15, GIRAFARIG
 	db 16, RATICATE
 	db 17, VENONAT
 	db 17, RATICATE
