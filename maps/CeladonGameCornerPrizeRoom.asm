@@ -34,36 +34,36 @@ CeladonPrizeRoom_tmcounterloop:
 	jump CeladonPrizeRoom_cancel
 
 .doubleteam
-	checkcoins 1500
+	checkcoins 1000
 	if_equal $2, CeladonPrizeRoom_notenoughcoins
 	itemtotext TM_DOUBLE_TEAM, $0
 	scall CeladonPrizeRoom_askbuy
 	iffalse CeladonPrizeRoom_cancel
 	giveitem TM_DOUBLE_TEAM
 	iffalse CeladonPrizeRoom_notenoughroom
-	takecoins 1500
+	takecoins 1000
 	jump CeladonPrizeRoom_purchased
 
 .psychic
-	checkcoins 3500
+	checkcoins 2000
 	if_equal $2, CeladonPrizeRoom_notenoughcoins
 	itemtotext TM_PSYCHIC, $0
 	scall CeladonPrizeRoom_askbuy
 	iffalse CeladonPrizeRoom_cancel
 	giveitem TM_PSYCHIC
 	iffalse CeladonPrizeRoom_notenoughroom
-	takecoins 3500
+	takecoins 2000
 	jump CeladonPrizeRoom_purchased
 
 .hyperbeam
-	checkcoins 7500
+	checkcoins 3500
 	if_equal $2, CeladonPrizeRoom_notenoughcoins
 	itemtotext TM_HYPER_BEAM, $0
 	scall CeladonPrizeRoom_askbuy
 	iffalse CeladonPrizeRoom_cancel
 	giveitem TM_HYPER_BEAM
 	iffalse CeladonPrizeRoom_notenoughroom
-	takecoins 7500
+	takecoins 3500
 	jump CeladonPrizeRoom_purchased
 
 CeladonPrizeRoom_askbuy:
@@ -113,9 +113,9 @@ CeladonPrizeRoom_TMMenuDataHeader:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "TM32    1500@"
-	db "TM29    3500@"
-	db "TM15    7500@"
+	db "TM32    1000@"
+	db "TM29    2000@"
+	db "TM15    3500@"
 	db "CANCEL@"
 
 
@@ -132,63 +132,63 @@ GoldenrodGameCornerPokemonVendor:
 	loadmenudata .MenuDataHeader
 	verticalmenu
 	closewindow
-	if_equal $1, .pikachu
-	if_equal $2, .porygon
-	if_equal $3, .larvitar
+	if_equal $1, .bulbasaur
+	if_equal $2, .charmander
+	if_equal $3, .squirtle
 	jump CeladonPrizeRoom_cancel
 
-.pikachu
-	checkcoins 2222
+.bulbasaur
+	checkcoins 2000
 	if_equal $2, CeladonPrizeRoom_notenoughcoins
 	checkcode VAR_PARTYCOUNT
 	if_equal $6, CeladonPrizeRoom_notenoughroom
-	pokenamemem PIKACHU, $0
+	pokenamemem BULBASAUR, $0
 	scall CeladonPrizeRoom_askbuy
 	iffalse CeladonPrizeRoom_cancel
 	waitsfx
 	playsound SFX_TRANSACTION
 	writetext CeladonPrizeRoom_HereYouGoText
 	waitbutton
-	writebyte PIKACHU
+	writebyte BULBASAUR
 	special Special_GameCornerPrizeMonCheckDex
-	givepoke PIKACHU, 25
-	takecoins 2222
+	givepoke BULBASAUR, 5
+	takecoins 2000
 	jump .loop
 
-.porygon
-	checkcoins 5555
+.charmander
+	checkcoins 2000
 	if_equal $2, CeladonPrizeRoom_notenoughcoins
 	checkcode VAR_PARTYCOUNT
 	if_equal $6, CeladonPrizeRoom_notenoughroom
-	pokenamemem PORYGON, $0
+	pokenamemem CHARMANDER, $0
 	scall CeladonPrizeRoom_askbuy
 	iffalse CeladonPrizeRoom_cancel
 	waitsfx
 	playsound SFX_TRANSACTION
 	writetext CeladonPrizeRoom_HereYouGoText
 	waitbutton
-	writebyte PORYGON
+	writebyte CHARMANDER
 	special Special_GameCornerPrizeMonCheckDex
-	givepoke PORYGON, 15
-	takecoins 5555
+	givepoke CHARMANDER, 5
+	takecoins 2000
 	jump .loop
 
-.larvitar
-	checkcoins 8888
+.squirtle
+	checkcoins 2000
 	if_equal $2, CeladonPrizeRoom_notenoughcoins
 	checkcode VAR_PARTYCOUNT
 	if_equal $6, CeladonPrizeRoom_notenoughroom
-	pokenamemem LARVITAR, $0
+	pokenamemem SQUIRTLE, $0
 	scall CeladonPrizeRoom_askbuy
 	iffalse CeladonPrizeRoom_cancel
 	waitsfx
 	playsound SFX_TRANSACTION
 	writetext CeladonPrizeRoom_HereYouGoText
 	waitbutton
-	writebyte LARVITAR
+	writebyte SQUIRTLE
 	special Special_GameCornerPrizeMonCheckDex
-	givepoke LARVITAR, 40
-	takecoins 8888
+	givepoke SQUIRTLE, 5
+	takecoins 2000
 	jump .loop
 
 
@@ -202,14 +202,14 @@ GoldenrodGameCornerPokemonVendor:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "PIKACHU    2222@"
-	db "PORYGON    5555@"
-	db "LARVITAR   8888@"
+	db "BULBASAUR  2000@"
+	db "CHARMANDER 2000@"
+	db "SQUIRTLE   2000@"
 	db "CANCEL@"
 
 
 CeladonGameCornerPrizeRoomGentlemanText:
-	text "I wanted PORYGON,"
+	text "I wanted CHARMANDER,"
 	line "but I was short by"
 	cont "100 coins…"
 	done
