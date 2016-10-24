@@ -108,13 +108,19 @@ Mart5: ; 16118
 ; 16121
 
 Mart6: ; 16121
-	db 8 ; # items
+	db 14 ; # items
 	db POKE_BALL
 	db GREAT_BALL
 	db ESCAPE_ROPE
 	db REPEL
 	db REVIVE
 	db FULL_HEAL
+	db FIRE_STONE
+	db THUNDERSTONE
+	db WATER_STONE
+	db LEAF_STONE
+	db MOON_STONE
+	db SUN_STONE
 	db POKE_DOLL
 	db FLOWER_MAIL
 	db $ff
@@ -169,12 +175,28 @@ Mart11: ; 16146
 ; 1614c
 
 Mart12: ; 1614c
-	db 5 ; # items
+	db 21 ; # items
 	db TM_THUNDERPUNCH
 	db TM_FIRE_PUNCH
 	db TM_ICE_PUNCH
 	db TM_HEADBUTT
 	db TM_ROCK_SMASH
+	db TM_RETURN
+	db TM_FRUSTRATION
+	db TM_ROLLOUT
+	db TM_SWEET_SCENT
+	db TM_SNORE
+	db TM_ICY_WIND
+	db TM_ENDURE
+	db TM_DIG
+	db TM_MUD_SLAP
+	db TM_SWAGGER
+	db TM_SWIFT
+	db TM_DEFENSE_CURL
+	db TM_DETECT
+	db TM_ATTRACT
+	db TM_FURY_CUTTER
+	db TM_NIGHTMARE
 	db $ff
 ; 16153
 
@@ -338,12 +360,16 @@ Mart24: ; 161c2
 ; 161ce
 
 Mart25: ; 161ce
-	db 5 ; # items
+	db 9 ; # items
+	db TM_PSYCH_UP
 	db TM_HIDDEN_POWER
 	db TM_SUNNY_DAY
+	db TM_SOLARBEAM
+	db TM_DRAGONBREATH
 	db TM_PROTECT
 	db TM_RAIN_DANCE
 	db TM_SANDSTORM
+	db TM_DREAM_EATER
 	db $ff
 ; 161d5
 
@@ -420,7 +446,7 @@ Mart31: ; 161fd
 ; 16205
 
 Mart32: ; 16205
-	db 7 ; # items
+	db 21 ; # items
 	db ULTRA_BALL
 	db MAX_REPEL
 	db HYPER_POTION
@@ -428,6 +454,20 @@ Mart32: ; 16205
 	db FULL_RESTORE
 	db REVIVE
 	db FULL_HEAL
+	db TM_DYNAMICPUNCH
+	db TM_CURSE
+	db TM_ROAR
+	db TM_TOXIC
+	db TM_ZAP_CANNON
+	db TM_GIGA_DRAIN
+	db TM_IRON_TAIL
+	db TM_EARTHQUAKE
+	db TM_SHADOW_BALL
+	db TM_SLEEP_TALK
+	db TM_SLUDGE_BOMB
+	db TM_REST
+	db TM_THIEF
+	db TM_STEEL_WING
 	db $ff
 ; 1620e
 
