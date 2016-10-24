@@ -472,11 +472,12 @@ Mart32: ; 16205
 ; 1620e
 
 Mart33: ; 1620e
-	db 4 ; # items
+	db 5 ; # items
 	db ENERGYPOWDER
 	db ENERGY_ROOT
 	db HEAL_POWDER
 	db REVIVAL_HERB
+	db RARE_CANDY
 	db $ff
 ; 16214
 
