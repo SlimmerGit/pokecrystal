@@ -3225,8 +3225,9 @@ DelibirdEvosAttacks:
 	db 20, CURSE
 	db 25, REST
 	db 30, SLEEP_TALK
-	db 35, TOXIC
-	db 40, ICE_BEAM 
+	db 35, SPIKES
+	db 40, TOXIC
+	db 45, ICE_BEAM 
 	db 0 ; no more level-up moves
 
 MantineEvosAttacks:
