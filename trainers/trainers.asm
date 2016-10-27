@@ -26,17 +26,23 @@ FalknerGroup:
 
 	; party
 
-	db 7, PIDGEY
+	db 6, PIDGEY
 		db TACKLE
 		db MUD_SLAP
 		db DOUBLE_TEAM
-		db SAND_ATTACK
+		db 0
+
+	db 6, SPEAROW
+		db PECK
+		db MUD_SLAP
+		db DOUBLE_TEAM
+		db 0
 
 	db 9, PIDGEOTTO
 		db TACKLE
 		db MUD_SLAP
 		db GUST
-		db DOUBLE_TEAM
+		db 0
 
 	db $ff ; end
 
@@ -53,6 +59,12 @@ WhitneyGroup:
 	db 1 ; moves
 
 	; party
+	
+	db 16, SNUBBULL
+		db CHARM
+		db BITE
+		db TACKLE
+		db ATTRACT
 
 	db 18, CLEFAIRY
 		db DOUBLESLAP
@@ -94,7 +106,7 @@ BugsyGroup:
 		db POISON_STING
 		db FURY_CUTTER
 
-	db 16, SCYTHER
+	db 15, SCYTHER
 		db QUICK_ATTACK
 		db PURSUIT
 		db FURY_CUTTER
@@ -131,7 +143,7 @@ MortyGroup:
 	db 25, GENGAR
 		db HYPNOSIS
 		db SHADOW_BALL
-		db MEAN_LOOK
+		db THUNDERPUNCH
 		db DESTINY_BOND
 
 	db 23, MISDREAVUS
@@ -156,11 +168,17 @@ PryceGroup:
 
 	; party
 
-	db 30, SEEL
+	db 30, DELIBIRD
 		db HEADBUTT
 		db ICY_WIND
 		db SLEEP_TALK
 		db REST
+		
+	db 33, CLOYSTER
+		db ICY_WIND
+		db SURF
+		db SUPERSONIC
+		db SPIKES
 
 	db 33, DEWGONG
 		db SURF
@@ -195,6 +213,12 @@ JasmineGroup:
 		db SUBSTITUTE
 		db TOXIC
 		db PROTECT
+		
+	db 32, SKARMORY
+		db DRILL_PECK
+		db STEEL_WING
+		db REST
+		db SLEEP_TALK
 
 	db 30, MAGNETON
 		db ZAP_CANNON
@@ -223,6 +247,12 @@ ChuckGroup:
 	db 1 ; moves
 
 	; party
+	
+	db 27, MACHOKE
+		db FORESIGHT
+		db CURSE
+		db DYNAMICPUNCH
+		db BODY_SLAM
 
 	db 27, PRIMEAPE
 		db MEDITATE
@@ -481,7 +511,7 @@ Rival1Group:
 	db 30, HAUNTER
 		db HYPNOSIS
 		db MEAN_LOOK
-		db PERISH_SONG
+		db NIGHT_SHADE
 		db SHADOW_BALL
 
 	db 32, SNEASEL
@@ -521,7 +551,7 @@ Rival1Group:
 	db 30, HAUNTER
 		db HYPNOSIS
 		db MEAN_LOOK
-		db PERISH_SONG
+		db NIGHT_SHADE
 		db SHADOW_BALL
 
 	db 32, SNEASEL
@@ -534,7 +564,7 @@ Rival1Group:
 		db SMOKESCREEN
 		db LEER
 		db QUICK_ATTACK
-		db FLAMETHROWER
+		db FLAME_WHEEL
 
 	db $ff ; end
 
@@ -561,7 +591,7 @@ Rival1Group:
 	db 30, HAUNTER
 		db HYPNOSIS
 		db MEAN_LOOK
-		db PERISH_SONG
+		db NIGHT_SHADE
 		db SHADOW_BALL
 
 	db 32, SNEASEL
@@ -571,10 +601,10 @@ Rival1Group:
 		db FAINT_ATTACK
 
 	db 32, FERALIGATR
-		db CURSE
+		db SCARY_FACE
 		db WATER_GUN
 		db BITE
-		db EARTHQUAKE
+		db SLASH
 
 	db $ff ; end
 
@@ -606,7 +636,7 @@ Rival1Group:
 
 	db 35, HAUNTER
 		db MEAN_LOOK
-		db PERISH_SONG
+		db CONFUSE_RAY
 		db SHADOW_BALL
 		db THUNDERBOLT
 
@@ -619,7 +649,7 @@ Rival1Group:
 	db 38, MEGANIUM
 		db SYNTHESIS
 		db RAZOR_LEAF
-		db EARTHQUAKE
+		db LEECH_SEED
 		db BODY_SLAM
 
 	db $ff ; end
@@ -652,7 +682,7 @@ Rival1Group:
 
 	db 35, HAUNTER
 		db MEAN_LOOK
-		db PERISH_SONG
+		db CONFUSE_RAY
 		db SHADOW_BALL
 		db THUNDERBOLT
 
@@ -666,7 +696,7 @@ Rival1Group:
 		db SMOKESCREEN
 		db THUNDERPUNCH
 		db QUICK_ATTACK
-		db FLAMETHROWER
+		db FLAME_WHEEL
 
 	db $ff ; end
 
@@ -698,7 +728,7 @@ Rival1Group:
 
 	db 35, HAUNTER
 		db MEAN_LOOK
-		db PERISH_SONG
+		db CONFUSE_RAY
 		db SHADOW_BALL
 		db THUNDERBOLT
 
@@ -709,10 +739,10 @@ Rival1Group:
 		db THUNDER_WAVE
 
 	db 38, FERALIGATR
-		db CURSE
+		db SCARY_FACE
 		db WATER_GUN
-		db EARTHQUAKE
-		db ROCK_SLIDE
+		db SLASH
+		db BITE
 
 	db $ff ; end
 
@@ -5856,7 +5886,7 @@ Rival2Group:
 
 	; party
 
-db 45, SNEASEL
+	db 45, SNEASEL
 		db DYNAMICPUNCH
 		db SCREECH
 		db IRON_TAIL
