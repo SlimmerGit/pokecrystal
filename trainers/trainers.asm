@@ -1019,37 +1019,37 @@ ChampionGroup:
 
 	; party
 
-	db 50, GYARADOS
+	db 55, GYARADOS
 		db THUNDER
 		db RAIN_DANCE
 		db SURF
 		db DOUBLE_EDGE
 
-	db 50, DRAGONITE
+	db 55, DRAGONITE
 		db REST
 		db DRAGONBREATH
 		db REFLECT
 		db HAZE
 
-	db 50, DRAGONITE
+	db 55, DRAGONITE
 		db FIRE_BLAST
 		db WING_ATTACK
 		db HYDRO_PUMP
 		db OUTRAGE
 
-	db 50, AERODACTYL
+	db 55, AERODACTYL
 		db WING_ATTACK
 		db ROCK_SLIDE
 		db FIRE_BLAST
 		db EARTHQUAKE
 
-	db 50, CHARIZARD
+	db 55, CHARIZARD
 		db FIRE_BLAST
 		db BELLY_DRUM
 		db ROCK_SLIDE
 		db EARTHQUAKE
 
-	db 55, DRAGONITE
+	db 60, DRAGONITE
 		db THUNDER
 		db ICE_BEAM
 		db DYNAMICPUNCH
@@ -1071,37 +1071,37 @@ BrockGroup:
 
 	; party
 
-	db 41, GOLEM, NO_ITEM
+	db 51, GOLEM, NO_ITEM
 		db CURSE
 		db ROCK_SLIDE
 		db COUNTER
 		db EARTHQUAKE
 
-	db 41, RHYDON, NO_ITEM
+	db 51, RHYDON, NO_ITEM
 		db CURSE
 		db ROAR
 		db EARTHQUAKE
 		db ZAP_CANNON
 
-	db 42, OMASTAR, NO_ITEM
+	db 52, OMASTAR, NO_ITEM
 		db SLEEP_TALK
 		db SURF
 		db REST
 		db HAZE
 
-	db 44, ONIX, NO_ITEM
+	db 54, ONIX, NO_ITEM
 		db CURSE
 		db ROCK_SLIDE
 		db ROAR
 		db EARTHQUAKE
 
-	db 43, MAROWAK, THICK_CLUB
+	db 53, MAROWAK, THICK_CLUB
 		db FIRE_BLAST
 		db ROCK_SLIDE
 		db BODY_SLAM
 		db EARTHQUAKE
 
-	db 42, KABUTOPS, NO_ITEM
+	db 52, KABUTOPS, NO_ITEM
 		db SLASH
 		db SURF
 		db SWORDS_DANCE
@@ -1123,37 +1123,37 @@ MistyGroup:
 
 	; party
 
-	db 42, GOLDUCK
+	db 52, GOLDUCK
 		db SURF
 		db HYPNOSIS
 		db PSYCH_UP
 		db PSYCHIC_M
 
-	db 42, QUAGSIRE
+	db 52, QUAGSIRE
 		db SURF
 		db REST
 		db EARTHQUAKE
 		db RAIN_DANCE
 
-	db 44, LAPRAS
+	db 54, LAPRAS
 		db SURF
 		db REST
 		db BLIZZARD
 		db SLEEP_TALK
 		
-	db 44, TENTACRUEL
+	db 54, TENTACRUEL
 		db SURF
 		db SUBSTITUTE
 		db SWORDS_DANCE
 		db SLUDGE_BOMB
 		
-	db 45, VAPOREON
+	db 55, VAPOREON
 		db SURF
 		db SLEEP_TALK
 		db REST
 		db GROWTH
 
-	db 47, STARMIE
+	db 57, STARMIE
 		db SURF
 		db THUNDERBOLT
 		db RECOVER
@@ -1175,37 +1175,37 @@ LtSurgeGroup:
 
 	; party
 
-	db 40, ELECTRODE
+	db 50, ELECTRODE
 		db REFLECT
 		db LIGHT_SCREEN
 		db THUNDERBOLT
 		db EXPLOSION
 		
-	db 44, RAICHU
+	db 54, RAICHU
 		db THUNDER_WAVE
 		db RAIN_DANCE
 		db SURF
 		db THUNDER
 
-	db 40, MAGNETON
+	db 50, MAGNETON
 		db LOCK_ON
 		db TRI_ATTACK
 		db SUBSTITUTE
 		db ZAP_CANNON
 
-	db 40, LANTURN
+	db 50, LANTURN
 		db REST
 		db SLEEP_TALK
 		db THUNDERBOLT
 		db SURF
 		
-	db 44, JOLTEON
+	db 54, JOLTEON
 		db AGILITY
 		db BATON_PASS
 		db THUNDERBOLT
 		db SUBSTITUTE
 
-	db 46, ELECTABUZZ
+	db 56, ELECTABUZZ
 		db ICE_PUNCH
 		db FIRE_PUNCH
 		db CROSS_CHOP
@@ -1298,37 +1298,37 @@ ErikaGroup:
 
 	; party
 
-	db 42, TANGELA
+	db 52, TANGELA
 		db GROWTH
 		db STUN_SPORE
 		db GIGA_DRAIN
 		db SLEEP_POWDER
 
-	db 41, JUMPLUFF
+	db 51, JUMPLUFF
 		db SLEEP_POWDER
 		db LEECH_SEED
 		db ENCORE
 		db GIGA_DRAIN
 		
-	db 43, EXEGGUTOR
+	db 53, EXEGGUTOR
 		db SLEEP_POWDER
 		db EXPLOSION
 		db PSYCHIC_M
 		db GIGA_DRAIN
 		
-	db 46, VILEPLUME
+	db 56, VILEPLUME
 		db SLEEP_POWDER
 		db LEECH_SEED
 		db SLUDGE_BOMB
 		db MOONLIGHT
 
-	db 46, VICTREEBEL
+	db 56, VICTREEBEL
 		db SLEEP_POWDER
 		db SWORDS_DANCE
 		db SLUDGE_BOMB
 		db RAZOR_LEAF
 
-	db 46, BELLOSSOM
+	db 56, BELLOSSOM
 		db SWORDS_DANCE
 		db SYNTHESIS
 		db GIGA_DRAIN
@@ -1769,20 +1769,20 @@ SchoolboyGroup:
 
 	db 35, ELECTRODE
 		db REFLECT
-		db REST
-		db TOXIC
+		db THUNDERBOLT
+		db THUNDER_WAVE
 		db LIGHT_SCREEN
 
 	db 35, GROWLITHE
 		db SUNNY_DAY
-		db CURSE
+		db LEER
 		db BODY_SLAM
-		db FLAMETHROWER
+		db FLAME_WHEEL
 
 	db 37, VILEPLUME
 		db SWORDS_DANCE
 		db SLEEP_POWDER
-		db SLUDGE_BOMB
+		db ACID
 		db MOONLIGHT
 
 	db $ff ; end
@@ -1824,11 +1824,11 @@ SchoolboyGroup:
 	db 32, YANMA
 		db QUICK_ATTACK
 		db DOUBLE_TEAM
-		db CURSE
-		db GIGA_DRAIN
+		db SUPERSONIC
+		db SONICBOOM
 
 	db 35, QUAGSIRE
-		db REST
+		db TAIL_WHIP
 		db SLAM
 		db WATER_GUN
 		db EARTHQUAKE
@@ -2335,10 +2335,10 @@ LassGroup:
 		db HYPNOSIS
 
 	db 29, AMPHAROS
-		db REST
+		db GROWL
 		db THUNDERSHOCK
 		db THUNDER_WAVE
-		db SLEEP_TALK
+		db TACKLE
 
 	db $ff ; end
 
@@ -2357,10 +2357,10 @@ LassGroup:
 		db HYPNOSIS
 
 	db 32, AMPHAROS
-		db DYNAMICPUNCH
+		db GROWL
 		db THUNDERPUNCH
 		db THUNDER_WAVE
-		db FIRE_PUNCH
+		db TACKLE
 
 	db $ff ; end
 
@@ -2373,7 +2373,7 @@ LassGroup:
 	; party
 
 	db 36, AMPHAROS
-		db DYNAMICPUNCH
+		db GROWL
 		db THUNDERPUNCH
 		db THUNDER_WAVE
 		db FIRE_PUNCH
@@ -2400,37 +2400,37 @@ JanineGroup:
 
 	; party
 
-	db 46, CROBAT
+	db 56, CROBAT
 		db SCREECH
 		db TOXIC
 		db MEAN_LOOK
 		db WING_ATTACK
 
-	db 46, WEEZING
+	db 56, WEEZING
 		db FIRE_BLAST
 		db SLUDGE_BOMB
 		db TOXIC
 		db EXPLOSION
 
-	db 46, WEEZING
+	db 56, WEEZING
 		db THUNDER
 		db SLUDGE_BOMB
 		db TOXIC
 		db EXPLOSION
 
-	db 43, ARIADOS
+	db 53, ARIADOS
 		db PROTECT
 		db GIGA_DRAIN
 		db TOXIC
 		db NIGHT_SHADE
 		
-	db 43, NIDOQUEEN
+	db 53, NIDOQUEEN
 		db LOVELY_KISS
 		db EARTHQUAKE
 		db THUNDERBOLT
 		db ICE_BEAM
 
-	db 49, VENOMOTH
+	db 59, VENOMOTH
 		db CURSE
 		db TOXIC
 		db SLUDGE_BOMB
@@ -2455,18 +2455,18 @@ CooltrainerMGroup:
 	db 26, CHARMANDER
 		db EMBER
 		db SMOKESCREEN
-		db ROCK_SLIDE
+		db SLASH
 		db SWORDS_DANCE
 
 	db 26, SQUIRTLE
-		db CURSE
+		db RAPID_SPIN
 		db WATER_GUN
 		db BITE
 		db REFLECT
 
 	db 26, BULBASAUR
 		db LEECH_SEED
-		db GIGA_DRAIN
+		db RAZOR_LEAF
 		db SLEEP_POWDER
 		db BODY_SLAM
 
@@ -2532,12 +2532,12 @@ CooltrainerMGroup:
 	db 35, VICTREEBEL
 		db SYNTHESIS
 		db TOXIC
-		db SLUDGE_BOMB
+		db ACID
 		db RAZOR_LEAF
 
 	db 35, KINGLER
 		db BUBBLEBEAM
-		db DOUBLE_EDGE
+		db STOMP
 		db SWORDS_DANCE
 		db SUBSTITUTE
 
@@ -2586,7 +2586,7 @@ CooltrainerMGroup:
 	; party
 
 	db 25, PIDGEOT
-		db TOXIC
+		db SAND_ATTACK
 		db QUICK_ATTACK
 		db WHIRLWIND
 		db WING_ATTACK
@@ -2610,7 +2610,7 @@ CooltrainerMGroup:
 	db 33, PARASECT
 		db LEECH_LIFE
 		db SPORE
-		db SLUDGE_BOMB
+		db SLASH
 		db SWORDS_DANCE
 
 	db 35, GOLDUCK
@@ -2632,12 +2632,12 @@ CooltrainerMGroup:
 	db 32, VICTREEBEL
 		db SYNTHESIS
 		db TOXIC
-		db SLUDGE_BOMB
-		db RAZOR_LEAF
+		db ACID
+		db VINE_WHIP
 
 	db 32, KINGLER
 		db BUBBLEBEAM
-		db DOUBLE_EDGE
+		db STOMP
 		db SWORDS_DANCE
 		db SUBSTITUTE
 
@@ -2666,7 +2666,7 @@ CooltrainerMGroup:
 	db 31, QUAGSIRE
 		db WATER_GUN
 		db SLAM
-		db REST
+		db TAIL_WHIP
 		db EARTHQUAKE
 
 	db 31, EXEGGCUTE
@@ -2782,7 +2782,7 @@ CooltrainerMGroup:
 	db 27, CHARMELEON
 		db EMBER
 		db SMOKESCREEN
-		db ROCK_SLIDE
+		db SLASH
 		db SWORDS_DANCE
 
 	db $ff ; end
@@ -2799,7 +2799,7 @@ CooltrainerMGroup:
 		db REFLECT
 		db SURF
 		db DRAGONBREATH
-		db DOUBLE_EDGE
+		db BODY_SLAM
 
 	db $ff ; end
 
@@ -2841,7 +2841,7 @@ CooltrainerFGroup:
 		db EMBER
 		db HYPNOSIS
 		db CONFUSE_RAY
-		db TOXIC
+		db QUICK_ATTACK
 
 	db $ff ; end
 
@@ -2920,7 +2920,7 @@ CooltrainerFGroup:
 		db THUNDER
 
 	db 32, BLASTOISE
-		db SLEEP_TALK
+		db BITE
 		db REST
 		db SURF
 		db RAIN_DANCE
@@ -2979,7 +2979,7 @@ CooltrainerFGroup:
 	db 32, VENUSAUR
 		db BODY_SLAM
 		db SLEEP_POWDER
-		db GIGA_DRAIN
+		db RAZOR_LEAF
 		db GROWTH
 
 	db $ff ; end
@@ -3047,13 +3047,13 @@ CooltrainerFGroup:
 	db 25, BUTTERFREE
 		db CONFUSION
 		db SLEEP_POWDER
-		db NIGHTMARE
+		db SUPERSONIC
 		db GUST
 
 	db 25, BELLOSSOM
 		db ABSORB
 		db STUN_SPORE
-		db SLUDGE_BOMB
+		db ACID
 		db SWORDS_DANCE
 
 	db $ff ; end
@@ -3356,7 +3356,7 @@ BeautyGroup:
 		db SYNTHESIS
 		db TAIL_WHIP
 		db TACKLE
-		db TOXIC
+		db POISONPOWDER
 
 	db 17, SKIPLOOM
 		db SYNTHESIS
@@ -3496,7 +3496,7 @@ PokemaniacGroup:
 	db 36, PORYGON
 		db RECOVER
 		db PSYCHIC_M
-		db CURSE
+		db THUNDER_WAVE
 		db TRI_ATTACK
 
 	db $ff ; end
@@ -4095,37 +4095,37 @@ SabrinaGroup:
 
 	; party
 
-	db 46, ESPEON
+	db 56, ESPEON
 		db BATON_PASS
 		db BITE
 		db GROWTH
 		db PSYCHIC_M
 
-	db 46, MR__MIME
+	db 56, MR__MIME
 		db BARRIER
 		db SAFEGUARD
 		db BATON_PASS
 		db PSYCHIC_M
 		
-	db 46, GIRAFARIG
+	db 56, GIRAFARIG
 		db AGILITY
 		db THUNDERBOLT
 		db BATON_PASS
 		db PSYCHIC_M
 		
-	db 47, HYPNO
+	db 57, HYPNO
 		db REFLECT
 		db THUNDERPUNCH
 		db ICE_PUNCH
 		db PSYCHIC_M
 		
-	db 47, SLOWKING
+	db 57, SLOWKING
 		db REST
 		db SURF
 		db ICE_BEAM
 		db PSYCHIC_M
 
-	db 48, ALAKAZAM
+	db 58, ALAKAZAM
 		db RECOVER
 		db FIRE_PUNCH
 		db PSYCHIC_M
@@ -4339,12 +4339,12 @@ BugCatcherGroup:
 		db FURY_ATTACK
 		db FOCUS_ENERGY
 		db TWINEEDLE
-		db SWORDS_DANCE
+		db PURSUIT
 
 	db 24, BUTTERFREE
 		db CONFUSION
 		db SLEEP_POWDER
-		db NIGHTMARE
+		db SUPERSONIC
 		db WHIRLWIND
 
 	db $ff ; end
@@ -4360,26 +4360,26 @@ BugCatcherGroup:
 	db 30, BUTTERFREE
 		db CONFUSION
 		db POISONPOWDER
-		db GIGA_DRAIN
+		db SUPERSONIC
 		db GUST
 
 	db 30, BUTTERFREE
 		db CONFUSION
 		db STUN_SPORE
-		db GIGA_DRAIN
+		db SUPERSONIC
 		db GUST
 
 	db 32, BEEDRILL
 		db FURY_ATTACK
 		db PURSUIT
-		db TWINEEDLE
+		db PIN_MISSILE
 		db SWORDS_DANCE
 
 	db 34, BUTTERFREE
-		db PSYCHIC_M
+		db PSYBEAM
 		db SLEEP_POWDER
-		db NIGHTMARE
-		db GIGA_DRAIN
+		db SUPERSONIC
+		db GUST
 
 	db $ff ; end
 
@@ -4393,7 +4393,7 @@ BugCatcherGroup:
 
 	db 36, VENOMOTH
 		db GUST
-		db SLUDGE_BOMB
+		db DISABLE
 		db PSYBEAM
 		db LEECH_LIFE
 
@@ -4409,7 +4409,7 @@ BugCatcherGroup:
 
 	db 40, VENOMOTH
 		db GUST
-		db SLUDGE_BOMB
+		db DISABLE
 		db PSYCHIC_M
 		db TOXIC
 
@@ -4714,19 +4714,19 @@ FisherGroup:
 	; party
 
 	db 34, SEAKING
-		db REST
+		db FLAIL
 		db WATERFALL
-		db SLEEP_TALK
+		db SUPERSONIC
 		db DOUBLE_EDGE
 
 	db 34, SEAKING
-		db REST
+		db FLAIL
 		db WATERFALL
-		db SLEEP_TALK
+		db AGILITY
 		db DOUBLE_EDGE
 
 	db 38, REMORAID
-		db FLAMETHROWER
+		db PSYBEAM
 		db AURORA_BEAM
 		db BUBBLEBEAM
 		db HYPER_BEAM
@@ -4776,21 +4776,21 @@ FisherGroup:
 	; party
 
 	db 34, SEAKING
-		db REST
+		db FLAIL
 		db RAIN_DANCE
 		db WATERFALL
 		db DOUBLE_EDGE
 
 	db 34, SEAKING
-		db REST
+		db AGILITY
 		db RAIN_DANCE
 		db WATERFALL
 		db DOUBLE_EDGE
 
 	db 37, QWILFISH
-		db CURSE
+		db HAZE
 		db SURF
-		db SLUDGE_BOMB
+		db PIN_MISSILE
 		db TAKE_DOWN
 
 	db $ff ; end
@@ -5706,7 +5706,7 @@ Rival2Group:
 		db REFLECT
 		db SCREECH
 		db THIEF
-		db SHADOW_BALL
+		db SLASH
 
 	db 42, GOLBAT
 		db SCREECH
@@ -5722,19 +5722,19 @@ Rival2Group:
 
 	db 43, GENGAR
 		db EXPLOSION
-		db ICE_PUNCH
+		db PERISH_SONG
 		db SHADOW_BALL
 		db THUNDERBOLT
 
 	db 43, ALAKAZAM
-		db FIRE_PUNCH
+		db ENCORE
 		db RECOVER
 		db THUNDER_WAVE
 		db PSYCHIC_M
 
 	db 45, MEGANIUM
 		db RAZOR_LEAF
-		db EARTHQUAKE
+		db LEECH_SEED
 		db BODY_SLAM
 		db SYNTHESIS
 
@@ -5752,7 +5752,7 @@ Rival2Group:
 		db REFLECT
 		db SCREECH
 		db THIEF
-		db SHADOW_BALL
+		db SLASH
 
 	db 42, GOLBAT
 		db SCREECH
@@ -5768,21 +5768,21 @@ Rival2Group:
 
 	db 43, GENGAR
 		db EXPLOSION
-		db ICE_PUNCH
+		db PERISH_SONG
 		db SHADOW_BALL
 		db THUNDERBOLT
 
 	db 43, ALAKAZAM
-		db FIRE_PUNCH
+		db ENCORE
 		db RECOVER
 		db THUNDER_WAVE
 		db PSYCHIC_M
 
 	db 45, TYPHLOSION
 		db THUNDERPUNCH
-		db REST
-		db FLAMETHROWER
-		db SLEEP_TALK
+		db SMOKESCREEN
+		db FLAME_WHEEL
+		db SWIFT
 
 	db $ff ; end
 
@@ -5798,7 +5798,7 @@ Rival2Group:
 		db REFLECT
 		db SCREECH
 		db THIEF
-		db SHADOW_BALL
+		db SLASH
 
 	db 42, GOLBAT
 		db SCREECH
@@ -5814,21 +5814,21 @@ Rival2Group:
 
 	db 43, GENGAR
 		db EXPLOSION
-		db ICE_PUNCH
+		db PERISH_SONG
 		db SHADOW_BALL
 		db THUNDERBOLT
 
 	db 43, ALAKAZAM
-		db FIRE_PUNCH
+		db ENCORE
 		db RECOVER
 		db THUNDER_WAVE
 		db PSYCHIC_M
 
 	db 45, FERALIGATR
-		db CURSE
-		db EARTHQUAKE
+		db SLASH
+		db SCARY_FACE
 		db ROCK_SLIDE
-		db DYNAMICPUNCH
+		db SURF
 
 	db $ff ; end
 
@@ -5932,7 +5932,7 @@ Rival2Group:
 
 	; party
 
-db 45, SNEASEL
+	db 45, SNEASEL
 		db DYNAMICPUNCH
 		db SCREECH
 		db IRON_TAIL
@@ -6132,13 +6132,13 @@ HikerGroup:
 		db ROCK_SLIDE
 		db DIG
 		db SAND_ATTACK
-		db MAGNITUDE
+		db BEAT_UP
 
 	db 27, DUGTRIO
 		db ROCK_SLIDE
 		db DIG
 		db SAND_ATTACK
-		db MAGNITUDE
+		db BEAT_UP
 
 	db $ff ; end
 
@@ -6254,11 +6254,11 @@ HikerGroup:
 	db 35, PILOSWINE
 		db EARTHQUAKE
 		db BLIZZARD
-		db REST
-		db SLEEP_TALK
+		db BODY_SLAM
+		db ENDURE
 
 	db 35, DUGTRIO
-		db MAGNITUDE
+		db SLASH
 		db DIG
 		db MUD_SLAP
 		db ROCK_SLIDE
@@ -6266,7 +6266,7 @@ HikerGroup:
 	db 38, STEELIX
 		db DIG
 		db IRON_TAIL
-		db CURSE
+		db BODY_SLAM
 		db ROCK_SLIDE
 
 	db $ff ; end
@@ -6304,19 +6304,19 @@ HikerGroup:
 	; party
 
 	db 34, GRAVELER
-		db CURSE
+		db COUNTER
 		db SELFDESTRUCT
 		db MAGNITUDE
 		db ROCK_SLIDE
 
 	db 36, GOLEM
-		db CURSE
+		db COUNTER
 		db SELFDESTRUCT
 		db MAGNITUDE
 		db ROCK_SLIDE
 
 	db 34, MACHOKE
-		db CURSE
+		db BODY_SLAM
 		db VITAL_THROW
 		db ROCK_SLIDE
 		db DIG
@@ -6455,37 +6455,37 @@ BlaineGroup:
 
 	; party
 
-	db 45, MAGCARGO
+	db 55, MAGCARGO
 		db CURSE
 		db EARTHQUAKE
 		db FIRE_BLAST
 		db ROCK_SLIDE
 
-	db 45, MAGMAR
+	db 55, MAGMAR
 		db THUNDERPUNCH
 		db FIRE_BLAST
 		db SUNNY_DAY
 		db CROSS_CHOP
 		
-	db 45, FLAREON
+	db 55, FLAREON
 		db SHADOW_BALL
 		db FIRE_BLAST
 		db IRON_TAIL
 		db ZAP_CANNON
 		
-	db 48, NINETALES
+	db 58, NINETALES
 		db HYPNOSIS
 		db FIRE_BLAST
 		db ROAR
 		db CONFUSE_RAY
 		
-	db 50, ARCANINE
+	db 60, ARCANINE
 		db CRUNCH
 		db FIRE_BLAST
 		db EXTREMESPEED
 		db BODY_SLAM
 
-	db 50, RAPIDASH
+	db 60, RAPIDASH
 		db IRON_TAIL
 		db SUNNY_DAY
 		db HYPNOSIS
@@ -6523,7 +6523,7 @@ BurglarGroup:
 	db 26, GROWLITHE
 		db ROAR
 		db EMBER
-		db CURSE
+		db BITE
 		db BODY_SLAM
 
 	db 24, KOFFING
@@ -6791,7 +6791,7 @@ BlackbeltGroup:
 		db DIG
 
 	db 38, MACHAMP
-		db CURSE
+		db BODY_SLAM
 		db ROCK_SLIDE
 		db EARTHQUAKE
 		db VITAL_THROW
@@ -6800,10 +6800,10 @@ BlackbeltGroup:
 		db EARTHQUAKE
 		db ROCK_THROW
 		db IRON_TAIL
-		db SANDSTORM
+		db BODY_SLAM
 
 	db 36, HITMONLEE
-		db DOUBLE_TEAM
+		db MEDITATE
 		db HI_JUMP_KICK
 		db FORESIGHT
 		db MIND_READER
@@ -6918,9 +6918,9 @@ ExecutiveMGroup:
 		db SUNNY_DAY
 
 	db 33, KOFFING
-		db THUNDER
-		db SLUDGE_BOMB
-		db FIRE_BLAST
+		db SMOKESCREEN
+		db SLUDGE
+		db SELFDESTRUCT
 		db PAIN_SPLIT
 
 	db 35, HOUNDOOM
@@ -6958,19 +6958,19 @@ ExecutiveMGroup:
 	db 30, KOFFING
 		db TACKLE
 		db SELFDESTRUCT
-		db SLUDGE_BOMB
+		db SLUDGE
 		db SMOKESCREEN
 
 	db 30, KOFFING
 		db TACKLE
 		db SELFDESTRUCT
-		db SLUDGE_BOMB
+		db SLUDGE
 		db SMOKESCREEN
 
 	db 30, KOFFING
 		db TACKLE
 		db SELFDESTRUCT
-		db SLUDGE_BOMB
+		db SLUDGE
 		db SMOKESCREEN
 
 	db 32, WEEZING
@@ -6982,13 +6982,13 @@ ExecutiveMGroup:
 	db 30, KOFFING
 		db TACKLE
 		db SELFDESTRUCT
-		db SLUDGE_BOMB
+		db SLUDGE
 		db SMOKESCREEN
 
 	db 30, KOFFING
 		db TACKLE
 		db PAIN_SPLIT
-		db SLUDGE_BOMB
+		db SLUDGE
 		db SMOKESCREEN
 
 	db $ff ; end
@@ -7395,7 +7395,7 @@ PicnickerGroup:
 	db 31, CLEFAIRY
 		db ENCORE
 		db SING
-		db DOUBLE_EDGE
+		db DOUBLESLAP
 		db MINIMIZE
 
 	db $ff ; end
@@ -7412,7 +7412,7 @@ PicnickerGroup:
 		db ENCORE
 		db DOUBLE_EDGE
 		db SING
-		db FIRE_BLAST
+		db MINIMIZE
 
 	db $ff ; end
 
@@ -7506,9 +7506,9 @@ PicnickerGroup:
 
 	db 30, WEEPINBELL
 		db SLEEP_POWDER
-		db SYNTHESIS
+		db POISONPOWDER
 		db STUN_SPORE
-		db SLUDGE_BOMB
+		db ACID
 
 	db 32, NIDOKING
 		db EARTHQUAKE
@@ -7559,7 +7559,7 @@ PicnickerGroup:
 
 	db 38, VENUSAUR
 		db SOLARBEAM
-		db GIGA_DRAIN
+		db RAZOR_LEAF
 		db BODY_SLAM
 		db SLEEP_POWDER
 
@@ -7575,9 +7575,9 @@ PicnickerGroup:
 
 	db 43, CLEFAIRY
 		db DOUBLE_EDGE
-		db FIRE_BLAST
+		db SING
 		db MOONLIGHT
-		db SHADOW_BALL
+		db ENCORE
 
 	db $ff ; end
 
@@ -7845,19 +7845,19 @@ CamperGroup:
 	db 33, GRAVELER
 		db SELFDESTRUCT
 		db ROCK_THROW
-		db CURSE
+		db COUNTER
 		db MAGNITUDE
 
 	db 33, GRAVELER
 		db SELFDESTRUCT
 		db ROCK_THROW
-		db CURSE
+		db COUNTER
 		db MAGNITUDE
 
 	db 36, MAGCARGO
 		db ROCK_THROW
-		db EARTHQUAKE
-		db CURSE
+		db AMNESIA
+		db HARDEN
 		db FLAMETHROWER
 
 	db 34, GOLDUCK
@@ -7896,14 +7896,14 @@ ExecutiveFGroup:
 	; party
 
 	db 32, ARBOK
-		db GIGA_DRAIN
-		db SLUDGE_BOMB
-		db EARTHQUAKE
+		db SCREECH
+		db ACID
+		db BITE
 		db GLARE
 
 	db 32, VILEPLUME
 		db GIGA_DRAIN
-		db SLUDGE_BOMB
+		db ACID
 		db SLEEP_POWDER
 		db SWORDS_DANCE
 
@@ -7927,7 +7927,7 @@ ExecutiveFGroup:
 		db WRAP
 		db LEER
 		db POISON_STING
-		db GIGA_DRAIN
+		db BITE
 
 	db 23, GLOOM
 		db ABSORB
@@ -8614,7 +8614,7 @@ TwinsGroup:
 		db THUNDER_WAVE
 		db DRAGONBREATH
 		db ICE_BEAM
-		db DOUBLE_EDGE
+		db BODY_SLAM
 
 	db $ff ; end
 
@@ -8636,7 +8636,7 @@ TwinsGroup:
 		db THUNDER_WAVE
 		db DRAGONBREATH
 		db ICE_BEAM
-		db DOUBLE_EDGE
+		db BODY_SLAM
 
 	db $ff ; end
 
@@ -8782,37 +8782,37 @@ BlueGroup:
 
 	; party
 
-	db 56, PIDGEOT
+	db 66, PIDGEOT
 		db DOUBLE_EDGE
 		db TOXIC
 		db WING_ATTACK
 		db STEEL_WING
 
-	db 56, ALAKAZAM
+	db 66, ALAKAZAM
 		db ENCORE
 		db RECOVER
 		db PSYCHIC_M
 		db FIRE_PUNCH
 
-	db 60, UMBREON
+	db 70, UMBREON
 		db MEAN_LOOK
 		db TOXIC
 		db CHARM
 		db REST
 
-	db 58, GYARADOS
+	db 68, GYARADOS
 		db THUNDER
 		db HYDRO_PUMP
 		db RAIN_DANCE
 		db DOUBLE_EDGE
 
-	db 58, EXEGGUTOR
+	db 68, EXEGGUTOR
 		db SLEEP_POWDER
 		db PSYCHIC_M
 		db EXPLOSION
 		db GIGA_DRAIN
 
-	db 58, ARCANINE
+	db 68, ARCANINE
 		db REST
 		db SLEEP_TALK
 		db FIRE_BLAST
@@ -8914,9 +8914,9 @@ GruntFGroup:
 
 	db 18, EKANS
 		db WRAP
-		db SCREECH
+		db LEER
 		db POISON_STING
-		db GIGA_DRAIN
+		db BITE
 
 	db 18, GLOOM
 		db ABSORB
@@ -8950,11 +8950,11 @@ MysticalmanGroup:
 		db LICK
 		db HYPNOSIS
 		db MEAN_LOOK
-		db PERISH_SONG
+		db NIGHT_SHADE
 
 	db 25, ELECTRODE
-		db REST
-		db TOXIC
+		db THUNDER_WAVE
+		db SONICBOOM
 		db THUNDER
 		db REFLECT
 
