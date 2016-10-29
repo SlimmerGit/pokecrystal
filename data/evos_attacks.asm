@@ -1492,7 +1492,7 @@ LickitungEvosAttacks:
 KoffingEvosAttacks:
 	db EVOLVE_LEVEL, 35, WEEZING
 	db 0 ; no more evolutions
-	db 1, CURSE
+	db 1, POISON_GAS
 	db 1, TACKLE
 	db 9, SLUDGE
 	db 17, PAIN_SPLIT
@@ -1505,7 +1505,7 @@ KoffingEvosAttacks:
 
 WeezingEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, CURSE
+	db 1, POISON_GAS
 	db 1, TACKLE
 	db 1, SLUDGE
 	db 1, PAIN_SPLIT
