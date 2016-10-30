@@ -1764,7 +1764,7 @@ TaurosEvosAttacks:
 	db 19, SCARY_FACE
 	db 26, PURSUIT
 	db 34, BODY_SLAM
-	db 43, TRASH
+	db 43, THRASH
 	db 53, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
@@ -2984,7 +2984,7 @@ UrsaringEvosAttacks:
 	db 29, REST
 	db 39, SLASH
 	db 49, SNORE
-	db 59, TRASH
+	db 59, THRASH
 	db 0 ; no more level-up moves
 
 SlugmaEvosAttacks:

@@ -14,7 +14,7 @@ Route4_MapScriptHeader:
 	
 	dbw MAPCALLBACK_OBJECTS, .Mewtwo
 	
-Mewtwo:
+.Mewtwo:
 	checkevent EVENT_FOUGHT_MEWTWO
 	iftrue .NoAppear
 	checkevent EVENT_BEAT_RED

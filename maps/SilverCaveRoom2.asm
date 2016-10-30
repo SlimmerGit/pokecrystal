@@ -11,7 +11,7 @@ SilverCaveRoom2_MapScriptHeader:
 .MapCallbacks:
 	db 1
 	
-	dbw MAPCALLBACKOBJECTS, .Mew
+	dbw MAPCALLBACK_OBJECTS, .Mew
 
 .Mew:
 	checkevent EVENT_FOUGHT_MEW
