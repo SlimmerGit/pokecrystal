@@ -224,7 +224,7 @@ PidgeyEvosAttacks:
 	db 15, QUICK_ATTACK
 	db 21, WHIRLWIND
 	db 29, WING_ATTACK
-	db 37, STEEL_WING
+	db 37, AGILITY
 	db 47, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
@@ -1664,7 +1664,7 @@ StarmieEvosAttacks:
 	db 1, RAPID_SPIN
 	db 1, RECOVER
 	db 1, BUBBLEBEAM
-	db 50, PSYCHIC
+	db 50, PSYCHIC_M
 	db 0 ; no more level-up moves
 
 MrMimeEvosAttacks:
