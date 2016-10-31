@@ -34,7 +34,6 @@
 	db 8, GEODUDE
 	db 8, SANDSHREW
 	db 12, PARAS
-	db 10, GEODUDE
 	db 8, CLEFAIRY
 	db 8, CLEFAIRY
 	db 4, CLEFFA
@@ -43,17 +42,17 @@
 	db 8, GEODUDE
 	db 8, SANDSHREW
 	db 12, PARAS
-	db 10, GEODUDE
 	db 8, CLEFAIRY
 	db 8, CLEFAIRY
+	db 4, CLEFFA
 	; nite
 	db 6, ZUBAT
 	db 8, GEODUDE
 	db 8, CLEFAIRY
 	db 12, PARAS
-	db 10, GEODUDE
 	db 12, CLEFAIRY
 	db 12, CLEFAIRY
+	db 4, CLEFFA
 
 	map ROCK_TUNNEL_1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
@@ -88,7 +87,6 @@
 	db 12, CUBONE
 	db 14, GEODUDE
 	db 16, ONIX
-	db 12, ZUBAT
 	db 15, MAROWAK
 	db 5, MAGBY
 	db 15, KANGASKHAN
@@ -97,8 +95,8 @@
 	db 12, CUBONE
 	db 14, GEODUDE
 	db 16, ONIX
-	db 12, ZUBAT
 	db 15, MAROWAK
+	db 5, MAGBY
 	db 15, KANGASKHAN
 	db 15, KANGASKHAN
 	; nite
@@ -199,17 +197,16 @@
 	db 5, PIDGEY
 	db 7, BUTTERFREE
 	db 7, LEDIAN
+	db 4, PIKACHU
 	db 3, PICHU
-	db 4, PIKACHU
-	db 4, PIKACHU
 	; day
 	db 3, CATERPIE
 	db 3, PIDGEY
-	db 5, PIDGEY
 	db 7, BUTTERFREE
 	db 7, PIDGEOTTO
 	db 4, PIKACHU
 	db 4, PIKACHU
+	db 3, PICHU
 	; nite
 	db 3, HOOTHOOT
 	db 3, SPINARAK
@@ -280,9 +277,8 @@
 	db 13, SNUBBULL
 	db 15, PIDGEOTTO
 	db 12, ABRA
-	db 4, IGGLYBUFF
 	db 14, JIGGLYPUFF
-	db 14, ABRA
+	db 4, IGGLYBUFF
 	db 14, ABRA
 	; day
 	db 13, PIDGEY
@@ -290,7 +286,7 @@
 	db 15, PIDGEOTTO
 	db 12, ABRA
 	db 14, JIGGLYPUFF
-	db 14, ABRA
+	db 4, IGGLYBUFF
 	db 14, ABRA
 	; nite
 	db 13, HOOTHOOT
@@ -362,7 +358,6 @@
 	db 19, PIDGEOTTO
 	db 16, ABRA
 	db 17, GROWLITHE
-	db 17, VULPIX
 	db 16, JIGGLYPUFF
 	db 18, KADABRA
 	db 18, KADABRA
@@ -377,9 +372,8 @@
 	; nite
 	db 17, MEOWTH
 	db 20, NOCTOWL
-	db 17, VULPIX
 	db 16, ABRA
-	db 17, HAUNTER
+	db 17, VULPIX
 	db 16, JIGGLYPUFF
 	db 18, KADABRA
 	db 18, KADABRA
@@ -419,9 +413,8 @@
 	db 15, RATICATE
 	db 15, FEAROW
 	db 15, MAROWAK
+	db 16, ELECTABUZZ
 	db 5, ELEKID
-	db 16, ELECTABUZZ
-	db 16, ELECTABUZZ
 	; day
 	db 15, SPEAROW
 	db 17, VOLTORB
@@ -429,7 +422,7 @@
 	db 15, FEAROW
 	db 15, MAROWAK
 	db 18, ELECTABUZZ
-	db 18, ELECTABUZZ
+	db 5, ELEKID
 	; nite
 	db 15, VENONAT
 	db 17, VOLTORB
@@ -660,7 +653,6 @@
 	; morn
 	db 3, RATTATA
 	db 3, SPEAROW
-	db 5, SPEAROW
 	db 5, MANKEY
 	db 4, DODUO
 	db 6, PONYTA
@@ -669,7 +661,6 @@
 	; day
 	db 3, RATTATA
 	db 3, SPEAROW
-	db 5, SPEAROW
 	db 5, MANKEY
 	db 4, DODUO
 	db 6, PONYTA
@@ -717,27 +708,24 @@
 	db 10, CATERPIE
 	db 10, PIDGEY
 	db 12, PIDGEOTTO
-	db 7, EEVEE
 	db 12, METAPOD
-	db 10, BELLSPROUT
+	db 7, EEVEE
 	db 14, BUTTERFREE
 	db 14, BUTTERFREE
 	; day
 	db 10, CATERPIE
-	db 7, EEVEE
 	db 10, PIDGEY
 	db 12, PIDGEOTTO
 	db 12, METAPOD
-	db 10, BELLSPROUT
+	db 7, EEVEE
 	db 14, BUTTERFREE
 	db 14, BUTTERFREE
 	; nite
 	db 10, ODDISH
-	db 7, EEVEE
 	db 10, HOOTHOOT
 	db 10, VENONAT
 	db 12, NOCTOWL
-	db 10, BELLSPROUT
+	db 7, EEVEE
 	db 14, NOCTOWL
 	db 14, NOCTOWL
 
