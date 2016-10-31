@@ -4,9 +4,7 @@
 	db 2 percent ; encounter rate
 	db 15, WOOPER
 	db 20, QUAGSIRE
-	db 15, QUAGSIRE
 	db 20, OMANYTE
-	db 20, KABUTO
 
 	map UNION_CAVE_1F
 	db 2 percent ; encounter rate
@@ -84,7 +82,7 @@
 	db 2 percent ; encounter rate
 	db 35, SEAKING
 	db 35, GOLDUCK
-	db 35, GOLDEEN
+	db 20, KABUTO
 
 	map DARK_CAVE_VIOLET_ENTRANCE
 	db 2 percent ; encounter rate
@@ -166,7 +164,6 @@
 
 	map ROUTE_44
 	db 2 percent ; encounter rate
-	db 25, POLIWAG
 	db 20, POLIWAG
 	db 25, POLIWHIRL
 	db 15, REMORAID
