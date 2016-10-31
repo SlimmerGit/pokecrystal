@@ -357,18 +357,17 @@
 	db 20, NATU
 	db 22, NATU
 	db 18, NATU
-	db 24, NATU
-	db 18, AERODACTYL
 	db 20, SMEARGLE
 	db 22, SMEARGLE
+	db 18, AERODACTYL
 	db 22, SMEARGLE
 	; day
 	db 20, NATU
 	db 22, NATU
 	db 18, NATU
-	db 24, NATU
 	db 20, SMEARGLE
 	db 22, SMEARGLE
+	db 18, AERODACTYL
 	db 22, SMEARGLE
 	; nite
 	db 20, NATU
@@ -632,7 +631,6 @@
 	db 5, TYROGUE
 	db 28, MACHOP
 	db 30, GOLBAT
-	db 30, GOLBAT
 	; day
 	db 31, GRAVELER
 	db 32, MACHOKE
@@ -640,7 +638,6 @@
 	db 30, RATICATE
 	db 5, TYROGUE
 	db 28, MACHOP
-	db 30, GOLBAT
 	db 30, GOLBAT
 	; nite
 	db 31, GRAVELER
@@ -792,7 +789,6 @@
 	db 24, SWINUB
 	db 25, ZUBAT
 	db 25, GOLBAT
-	db 26, SWINUB
 	db 5, SMOOCHUM
 	db 22, JYNX
 	db 24, JYNX
@@ -801,7 +797,7 @@
 	db 24, SWINUB
 	db 25, ZUBAT
 	db 25, GOLBAT
-	db 26, SWINUB
+	db 5, SMOOCHUM
 	db 22, JYNX
 	db 24, JYNX
 	db 26, JYNX
@@ -1280,20 +1276,16 @@
 	db 5, RATTATA
 	db 7, BELLSPROUT
 	db 6, MAREEP
-	db 7, MAREEP
 	db 6, HOPPIP
 	db 7, PIDGEY
-	db 7, HOPPIP
 	db 7, HOPPIP
 	; day
 	db 4, EKANS
 	db 5, RATTATA
 	db 7, BELLSPROUT
 	db 6, MAREEP
-	db 7, MAREEP
 	db 6, HOPPIP
 	db 7, PIDGEY
-	db 7, HOPPIP
 	db 7, HOPPIP
 	; nite
 	db 4, WOOPER
@@ -1530,7 +1522,6 @@
 	db 15, FURRET
 	db 17, RATICATE
 	db 17, FURRET
-	db 17, FURRET
 	; day
 	db 15, SENTRET
 	db 16, PIDGEOTTO
@@ -1539,15 +1530,13 @@
 	db 15, FURRET
 	db 17, RATICATE
 	db 17, FURRET
-	db 17, FURRET
 	; nite
 	db 15, VENONAT
 	db 16, NOCTOWL
+	db 17, VENONAT
 	db 15, GIRAFARIG
 	db 16, RATICATE
-	db 17, VENONAT
 	db 17, RATICATE
-	db 17, VENOMOTH
 	db 17, VENOMOTH
 
 	map ROUTE_44
