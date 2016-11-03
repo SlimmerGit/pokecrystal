@@ -523,7 +523,7 @@ Item2Attributes:
 	item_attribute $9999, 0,                 0,                       0, ITEM,     ITEMMENU_NOUSE,   ITEMMENU_NOUSE
 
 ; UP-GRADE
-	item_attribute  2100, 0,                 0,             CANT_SELECT, ITEM,     ITEMMENU_NOUSE,   ITEMMENU_NOUSE
+	item_attribute  2100, 0,                 0,             CANT_SELECT, ITEM,     ITEMMENU_PARTY,   ITEMMENU_NOUSE
 
 ; BERRY
 	item_attribute    10, HELD_BERRY,          10,             CANT_SELECT, ITEM,     ITEMMENU_PARTY,   ITEMMENU_PARTY
