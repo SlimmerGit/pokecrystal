@@ -1188,7 +1188,11 @@ FireStone:
 Thunderstone:
 WaterStone:
 LeafStone:
-SunStone: ; ee0f
+SunStone:
+KingsRock:
+MetalCoat:
+DragonFang:
+UpGrade: ; ee0f
 	ld b, PARTYMENUACTION_EVO_STONE
 	call UseItem_SelectMon
 
@@ -2846,7 +2850,6 @@ GoldLeaf:
 SoftSand:
 SharpBeak:
 PoisonBarb:
-KingsRock:
 RedApricorn:
 Tinymushroom:
 BigMushroom:
@@ -2895,8 +2898,6 @@ Charcoal:
 ScopeLens:
 Item8D:
 Item8E:
-MetalCoat:
-DragonFang:
 Item91:
 Leftovers:
 Item93:
@@ -2912,7 +2913,6 @@ ItemA2:
 LightBall:
 PolkadotBow:
 ItemAB:
-UpGrade:
 ItemB0:
 RainbowWing:
 ItemB3:
