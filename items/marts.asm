@@ -175,7 +175,7 @@ Mart11: ; 16146
 ; 1614c
 
 Mart12: ; 1614c
-	db 21 ; # items
+	db 15 ; # items
 	db TM_THUNDERPUNCH
 	db TM_FIRE_PUNCH
 	db TM_ICE_PUNCH
@@ -191,12 +191,6 @@ Mart12: ; 1614c
 	db TM_DIG
 	db TM_MUD_SLAP
 	db TM_SWAGGER
-	db TM_SWIFT
-	db TM_DEFENSE_CURL
-	db TM_DETECT
-	db TM_ATTRACT
-	db TM_FURY_CUTTER
-	db TM_NIGHTMARE
 	db $ff
 ; 16153
 
@@ -253,7 +247,7 @@ Mart16: ; 16170
 ; 1617b
 
 Mart17: ; 1617b
-	db 9 ; # items
+	db 15 ; # items
 	db GREAT_BALL
 	db ULTRA_BALL
 	db HYPER_POTION
@@ -263,11 +257,17 @@ Mart17: ; 1617b
 	db MAX_REPEL
 	db X_DEFEND
 	db X_ATTACK
+	db TM_SWIFT
+	db TM_DEFENSE_CURL
+	db TM_DETECT
+	db TM_ATTRACT
+	db TM_FURY_CUTTER
+	db TM_NIGHTMARE
 	db $ff
 ; 16186
 
 Mart18: ; 16186
-	db 9 ; # items
+	db 15 ; # items
 	db ULTRA_BALL
 	db HYPER_POTION
 	db FULL_HEAL
@@ -277,6 +277,12 @@ Mart18: ; 16186
 	db AWAKENING
 	db BURN_HEAL
 	db FLOWER_MAIL
+	db TM_ROAR
+	db TM_ZAP_CANNON
+	db TM_IRON_TAIL
+	db TM_SLUDGE_BOMB
+	db TM_THIEF
+	db TM_STEEL_WING
 	db $ff
 ; 16191
 
@@ -446,7 +452,7 @@ Mart31: ; 161fd
 ; 16205
 
 Mart32: ; 16205
-	db 21 ; # items
+	db 15 ; # items
 	db ULTRA_BALL
 	db MAX_REPEL
 	db HYPER_POTION
@@ -456,18 +462,12 @@ Mart32: ; 16205
 	db FULL_HEAL
 	db TM_DYNAMICPUNCH
 	db TM_CURSE
-	db TM_ROAR
 	db TM_TOXIC
-	db TM_ZAP_CANNON
 	db TM_GIGA_DRAIN
-	db TM_IRON_TAIL
 	db TM_EARTHQUAKE
 	db TM_SHADOW_BALL
 	db TM_SLEEP_TALK
-	db TM_SLUDGE_BOMB
 	db TM_REST
-	db TM_THIEF
-	db TM_STEEL_WING
 	db $ff
 ; 1620e
 
