@@ -26,19 +26,19 @@ FalknerGroup:
 
 	; party
 
-	db 6, PIDGEY
+	db 8, PIDGEY
 		db TACKLE
 		db MUD_SLAP
 		db DOUBLE_TEAM
 		db 0
 
-	db 6, SPEAROW
+	db 8, SPEAROW
 		db PECK
 		db MUD_SLAP
 		db DOUBLE_TEAM
 		db 0
 
-	db 9, PIDGEOTTO
+	db 12, PIDGEOTTO
 		db TACKLE
 		db MUD_SLAP
 		db GUST
@@ -60,19 +60,19 @@ WhitneyGroup:
 
 	; party
 	
-	db 16, SNUBBULL
+	db 18, SNUBBULL
 		db CHARM
 		db BITE
 		db TACKLE
 		db ATTRACT
 
-	db 18, CLEFAIRY
+	db 20, CLEFAIRY
 		db DOUBLESLAP
 		db SING
 		db ENCORE
 		db ATTRACT
 
-	db 20, MILTANK
+	db 23, MILTANK
 		db ROLLOUT
 		db ATTRACT
 		db STOMP
@@ -94,19 +94,19 @@ BugsyGroup:
 
 	; party
 
-	db 12, BUTTERFREE
+	db 14, BUTTERFREE
 		db SLEEP_POWDER
 		db NIGHTMARE
 		db CONFUSION
 		db STRING_SHOT
 
-	db 13, BEEDRILL
+	db 15, BEEDRILL
 		db FOCUS_ENERGY
 		db STRING_SHOT
 		db POISON_STING
 		db FURY_CUTTER
 
-	db 15, SCYTHER
+	db 18, SCYTHER
 		db QUICK_ATTACK
 		db PURSUIT
 		db FURY_CUTTER
@@ -128,25 +128,25 @@ MortyGroup:
 
 	; party
 
-	db 21, GASTLY
+	db 23, GASTLY
 		db LICK
 		db SPITE
 		db MEAN_LOOK
 		db CURSE
 
-	db 21, HAUNTER
+	db 23, HAUNTER
 		db HYPNOSIS
 		db NIGHTMARE
 		db SHADOW_BALL
 		db DREAM_EATER
 
-	db 25, GENGAR
+	db 29, GENGAR
 		db HYPNOSIS
 		db SHADOW_BALL
 		db THUNDERPUNCH
 		db DESTINY_BOND
 
-	db 23, MISDREAVUS
+	db 25, MISDREAVUS
 		db PERISH_SONG
 		db MEAN_LOOK
 		db SHADOW_BALL
@@ -168,19 +168,19 @@ PryceGroup:
 
 	; party
 
-	db 30, DELIBIRD
+	db 33, DELIBIRD
 		db HEADBUTT
 		db ICY_WIND
 		db SLEEP_TALK
 		db REST
 		
-	db 33, CLOYSTER
+	db 35, CLOYSTER
 		db ICY_WIND
 		db SURF
 		db SUPERSONIC
 		db SPIKES
 
-	db 33, DEWGONG
+	db 35, DEWGONG
 		db SURF
 		db ICY_WIND
 		db SLEEP_TALK
@@ -208,19 +208,19 @@ JasmineGroup:
 
 	; party
 
-	db 30, MAGNEMITE
+	db 32, MAGNEMITE
 		db THUNDERBOLT
 		db SUBSTITUTE
 		db TOXIC
 		db PROTECT
 		
-	db 32, SKARMORY
+	db 33, SKARMORY
 		db DRILL_PECK
 		db STEEL_WING
 		db REST
 		db SLEEP_TALK
 
-	db 30, MAGNETON
+	db 32, MAGNETON
 		db ZAP_CANNON
 		db SUBSTITUTE
 		db LOCK_ON
@@ -248,19 +248,19 @@ ChuckGroup:
 
 	; party
 	
-	db 27, MACHOKE
+	db 30, MACHOKE
 		db FORESIGHT
 		db CURSE
 		db DYNAMICPUNCH
 		db BODY_SLAM
 
-	db 27, PRIMEAPE
+	db 30, PRIMEAPE
 		db MEDITATE
 		db SUBSTITUTE
 		db DYNAMICPUNCH
 		db BODY_SLAM
 
-	db 30, POLIWRATH
+	db 33, POLIWRATH
 		db LOVELY_KISS
 		db MIND_READER
 		db SURF
