@@ -262,10 +262,11 @@ RattataEvosAttacks:
 	db EVOLVE_LEVEL, 20, RATICATE
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, MIMIC
+	db 1, TAIL_WHIP
 	db 7, QUICK_ATTACK
 	db 13, HYPER_FANG
 	db 20, SUBSTITUTE
+	db 24, MIMIC
 	db 27, BODY_SLAM
 	db 34, SUPER_FANG
 	db 0 ; no more level-up moves
@@ -273,11 +274,12 @@ RattataEvosAttacks:
 RaticateEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, MIMIC
+	db 1, TAIL_WHIP
 	db 1, QUICK_ATTACK
 	db 7, QUICK_ATTACK
 	db 13, HYPER_FANG
 	db 20, SUBSTITUTE
+	db 26, MIMIC
 	db 30, BODY_SLAM
 	db 40, SUPER_FANG
 	db 0 ; no more level-up moves
@@ -777,9 +779,9 @@ GrowlitheEvosAttacks:
 	db EVOLVE_ITEM, FIRE_STONE, ARCANINE
 	db 0 ; no more evolutions
 	db 1, BITE
-	db 1, ROAR
+	db 1, LEER
 	db 9, EMBER
-	db 18, LEER
+	db 18, ROAR
 	db 26, BODY_SLAM
 	db 34, FLAME_WHEEL
 	db 42, AGILITY
@@ -1249,7 +1251,7 @@ GastlyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
 	db 1, LICK
-	db 8, PROTECT
+	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
 	db 21, NIGHT_SHADE
@@ -1263,8 +1265,8 @@ HaunterEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
 	db 1, LICK
-	db 1, PROTECT
-	db 8, PROTECT
+	db 1, SPITE
+	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
 	db 21, NIGHT_SHADE
@@ -1277,8 +1279,8 @@ GengarEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
 	db 1, LICK
-	db 1, PROTECT
-	db 8, PROTECT
+	db 1, SPITE
+	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
 	db 21, NIGHT_SHADE
@@ -1296,7 +1298,7 @@ OnixEvosAttacks:
 	db 10, BIND
 	db 14, ROCK_THROW
 	db 23, BODY_SLAM
-	db 27, ROAR
+	db 27, RAGE
 	db 36, ROCK_SLIDE
 	db 40, EXPLOSION
 	db 49, EARTHQUAKE
@@ -1524,7 +1526,7 @@ RhyhornEvosAttacks:
 	db 1, HORN_ATTACK
 	db 1, TAIL_WHIP
 	db 13, STOMP
-	db 19, ROAR
+	db 19, FURY_ATTACK
 	db 31, SCARY_FACE
 	db 37, TAKE_DOWN
 	db 49, ROCK_SLIDE
@@ -1536,9 +1538,9 @@ RhydonEvosAttacks:
 	db 1, HORN_ATTACK
 	db 1, TAIL_WHIP
 	db 1, STOMP
-	db 1, ROAR
+	db 1, FURY_ATTACK
 	db 13, STOMP
-	db 19, ROAR
+	db 19, FURY_ATTACK
 	db 31, SCARY_FACE
 	db 37, TAKE_DOWN
 	db 54, ROCK_SLIDE
@@ -1580,7 +1582,7 @@ KangaskhanEvosAttacks:
 	db 1, COMET_PUNCH
 	db 7, ATTRACT
 	db 13, BITE
-	db 19, ROAR
+	db 19, TAIL_WHIP
 	db 25, BODY_SLAM
 	db 31, SUBSTITUTE
 	db 37, ENDURE
@@ -2571,8 +2573,8 @@ if _CRYSTAL
 else
 	db 1, SYNTHESIS
 endc
-	db 5, PROTECT
-	db 10, TACKLE
+	db 5, TACKLE
+	db 10, TAIL_WHIP
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER
@@ -2587,13 +2589,13 @@ SkiploomEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SPLASH
 	db 1, SYNTHESIS
-	db 1, PROTECT
+	db 1, TAIL_WHIP
 	db 1, TACKLE
 if _CRYSTAL
 	db 5, SYNTHESIS
 endc
-	db 5, TAIL_WHIP
-	db 10, TACKLE
+	db 5, TACKLE
+	db 10, TAIL_WHIP
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER
@@ -2607,13 +2609,13 @@ JumpluffEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SPLASH
 	db 1, SYNTHESIS
-	db 1, PROTECT
+	db 1, TAIL_WHIP
 	db 1, TACKLE
 if _CRYSTAL
 	db 5, SYNTHESIS
 endc
-	db 5, PROTECT
-	db 10, TACKLE
+	db 5, TACKLE
+	db 10, TAIL_WHIP
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER
@@ -2855,7 +2857,7 @@ SteelixEvosAttacks:
 	db 10, BIND
 	db 14, ROCK_THROW
 	db 23, BODY_SLAM
-	db 27, ROAR
+	db 27, RAGE
 	db 36, ROCK_SLIDE
 	db 40, EXPLOSION
 	db 49, IRON_TAIL
