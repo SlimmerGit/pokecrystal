@@ -823,30 +823,30 @@ TryEnemyFlee: ; 3c543
 FleeMons:
 
 SometimesFleeMons: ; 3c59a
-	db MAGNEMITE
-	db GRIMER
-	db TANGELA
-	db MR__MIME
-	db EEVEE
-	db PORYGON
-	db DRATINI
-	db DRAGONAIR
-	db TOGETIC
+	db CLEFABLE
+	db ALAKAZAM
+	db VAPOREON
+	db JOLTEON
+	db FLAREON
+	db CROBAT
+	db BELLOSSOM
+	db POLITOED
+	db ESPEON
 	db UMBREON
-	db UNOWN
-	db SNUBBULL
-	db HERACROSS
+	db SLOWKING
+	db STEELIX
+	db SCIZOR
 	db -1
 
 OftenFleeMons: ; 3c5a8
-	db CUBONE
-	db ARTICUNO
-	db ZAPDOS
-	db MOLTRES
-	db QUAGSIRE
-	db DELIBIRD
-	db PHANPY
-	db TEDDIURSA
+	db RAICHU
+	db GENGAR
+	db STARMIE
+	db TOGETIC
+	db SUNFLORA
+	db KINGDRA
+	db PORYGON2
+	db BLISSEY
 	db -1
 
 AlwaysFleeMons: ; 3c5b1
